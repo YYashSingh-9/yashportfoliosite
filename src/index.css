@@ -1,7 +1,8 @@
 :root {
   font-size: 62.5%;
   font: 18px/145% var(--sans);
-
+  margin: 0rem;
+  border: 0rem;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -54,4 +55,16 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, var(--bg-secondary), var(--bg));
+  position: relative;
+  height: 100vh;
+}
+body::before {
+  content: "";
+  background: url(assets/asfalt-light.png);
+  position: fixed;
+  inset: 0;
+  opacity: 0.95;
+  mix-blend-mode: overlay;
+  pointer-events: none;
 }
