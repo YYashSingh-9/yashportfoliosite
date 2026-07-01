@@ -1,9 +1,12 @@
 import "./App.css";
+import Header from "./Components/Top-level-components/Header";
+import { Outlet } from "react-router";
 
 function App() {
   return (
     <>
-      <h1 style={{ color: "black", margin: "0" }}> Yashwardhan Singh</h1>
+      <Header />
+      <Outlet />
     </>
   );
 }
