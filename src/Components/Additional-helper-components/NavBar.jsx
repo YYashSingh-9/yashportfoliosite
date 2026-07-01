@@ -31,27 +31,27 @@ import Toolbar from "@mui/material/Toolbar";
 const NavBar = () => {
   return (
     <>
-      <AppBar position="fixed">
-        <Toolbar
-          variant="dense"
-          sx={{ bgcolor: "white", justifyContent: "space-between" }}
-          className={classes.parentBar}
-        >
-          <Box>
-            <h2>hellow</h2>
-          </Box>
-          <Box className={classes.childBar}>
-            <Box>Home</Box>
-            <Box>About</Box>
-            <Box>Work</Box>
-            <Box>Services</Box>
-            <Box>Contact</Box>
-          </Box>
-          <Box>
-            <h2 style={{ color: "black" }}>logout</h2>
-          </Box>
-        </Toolbar>
-      </AppBar>
+      <Toolbar
+        variant="dense"
+        sx={{ justifyContent: "space-between", alignContent: "center" }}
+        className={classes.parentBar}
+      >
+        <Box>
+          <h2>hellow</h2>
+        </Box>
+        <Box className={classes.childBar}>
+          <Box>Home</Box>
+          <Box>About</Box>
+          <Box>Work</Box>
+          <Box>Services</Box>
+          <Box>Contact</Box>
+        </Box>
+        <Box className={classes.logoutBtn}>
+          <button>
+            <p>logout</p>
+          </button>
+        </Box>
+      </Toolbar>
     </>
   );
 };

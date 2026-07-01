@@ -1,0 +1,23 @@
+.parentBar {
+  margin: 2rem 0 0 0;
+  background: transparent;
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
+.childBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  border: 0.1rem solid var(--accent);
+  padding: 1.2rem 2.75rem;
+  border-radius: 2rem;
+}
+.logoutBtn button {
+  padding: 0.6rem 2.5rem;
+  background: transparent;
+  border: 0.1rem solid var(--accent);
+  border-radius: 2rem;
+  color: var(--text-primary);
+  text-transform: capitalize;
+}
