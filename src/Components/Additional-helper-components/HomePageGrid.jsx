@@ -1,17 +1,38 @@
 import classes from "./HomePageGrid.module.css";
 import { Box, Grid } from "@mui/material";
-
+import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
+// import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import TwoFloorDiv from "../DRYComponents/TwoFloorDiv";
 const HomePageGrid = () => {
   return (
     <>
-      <Grid container spacing={2}>
-        <Grid>
-          <Box>This is 1</Box>
+      {/* <Grid container spacing={2} className={classes.h_page_outerGrid}> */}
+      <BasicCoverDiv direction="row">
+        <Grid className={classes.leftGrid}>
+          <Box>
+            <p> Welome to my portfolio</p>
+          </Box>
+          <Box>
+            <p> Your next best investment</p>
+          </Box>
+          <Box>
+            <h4> Strategic solution</h4>
+          </Box>
+          <Box>
+            <button> View my work</button>
+          </Box>
+          <Box className={classes.expDividerText}>
+            <TwoFloorDiv />
+            <TwoFloorDiv />
+            <TwoFloorDiv />
+          </Box>
+          <Box></Box>
         </Grid>
-        <Grid>
+        <Grid className={classes.rightGrid}>
           <Box>This is 2</Box>
         </Grid>
-      </Grid>
+      </BasicCoverDiv>
+      {/* </Grid> */}
     </>
   );
 };

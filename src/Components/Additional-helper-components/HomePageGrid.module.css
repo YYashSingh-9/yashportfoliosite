@@ -1,0 +1,25 @@
+.expDividerText {
+  display: flex;
+}
+.leftGrid {
+  width: 50%;
+  border: 0.1rem solid black;
+  padding-top: 7rem;
+  padding-left: 2rem;
+}
+
+.leftGrid > :nth-child(1) {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.leftGrid > :nth-child(2) {
+  font-family: "Italiana", serif;
+  font-size: 6rem;
+  font-weight: 900;
+
+  text-transform: capitalize;
+}
