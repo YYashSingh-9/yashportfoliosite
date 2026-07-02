@@ -4,20 +4,61 @@
   color: var(--text-primary);
   text-transform: capitalize;
 }
+.parentBar > :nth-child(1) {
+  flex-basis: 10%;
+  font-size: 2rem;
+}
 .childBar {
+  /* flex-basis: 70%; */
   display: flex;
+  font-weight: 300;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  font-size: 0.9rem;
   border: 0.1rem solid var(--accent);
-  padding: 1.2rem 2.75rem;
+  padding: 0.75rem 2.75rem 0.15rem 2.75rem;
   border-radius: 2rem;
 }
 .logoutBtn button {
+  flex-basis: 20%;
   padding: 0.6rem 2.5rem;
   background: transparent;
   border: 0.1rem solid var(--accent);
   border-radius: 2rem;
+  font-family: "Inter", sans-serif; /* Explicitly re-declare it */
+
   color: var(--text-primary);
+  font-weight: 300;
+  font-size: 0.9rem;
   text-transform: capitalize;
+}
+.navItemChild_cover {
+  padding: 0.6rem 1.5rem;
+  border-radius: 1.2rem;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn_ball {
+  cursor: pointer;
+  height: 0.3rem;
+  width: 0.3rem;
+  margin: auto;
+  margin-top: 0.2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  transition: 0.2s ease;
+}
+
+.navItemChild_cover:hover {
+  background-color: rgb(29, 29, 29);
+}
+.navItemChild_cover:hover ~ .btn_ball {
+  background-color: var(--accent);
+}
+
+.navItemChild_cover:active ~ .btn_ball {
+  box-shadow: rgba(255, 191, 0) 0px 5px 15px;
+  background-color: rgba(243, 196, 7);
 }

@@ -28,6 +28,7 @@ import Toolbar from "@mui/material/Toolbar";
 //     </Box>
 //   );
 // }
+const navItems = ["Home", "About", "Work", "Services", "Contact"];
 const NavBar = () => {
   return (
     <>
@@ -37,18 +38,23 @@ const NavBar = () => {
         className={classes.parentBar}
       >
         <Box>
-          <h2>hellow</h2>
+          <h2>Y.</h2>
         </Box>
         <Box className={classes.childBar}>
-          <Box>Home</Box>
-          <Box>About</Box>
-          <Box>Work</Box>
-          <Box>Services</Box>
-          <Box>Contact</Box>
+          {navItems.map((el) => {
+            return (
+              <Box className={classes.navItemParent_cover}>
+                <Box className={classes.navItemChild_cover}>
+                  <p>{el}</p>
+                </Box>
+                <Box className={classes.btn_ball}></Box>
+              </Box>
+            );
+          })}
         </Box>
         <Box className={classes.logoutBtn}>
           <button>
-            <p>logout</p>
+            <p>let's talk</p>
           </button>
         </Box>
       </Toolbar>
