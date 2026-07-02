@@ -5,8 +5,15 @@ import { Provider } from "react-redux";
 import store from "./Store/mainStore.js";
 import App from "./App.jsx";
 import "./index.css";
+import LandingPage from "./Components/Top-level-components/LandingPage.jsx";
 
-const router = createBrowserRouter([{ path: "/", element: <App /> }]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [{ path: "/", element: <LandingPage /> }],
+  },
+]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -16,18 +16,22 @@
   align-items: center;
   gap: 3rem;
   font-size: 0.9rem;
-  border: 0.1rem solid var(--accent);
+  /* border: 0.1rem solid var(--accent); */
+  border: 0.1rem solid rgba(176, 138, 90, 0.35);
   padding: 0.75rem 2.75rem 0.15rem 2.75rem;
   border-radius: 2rem;
+  background: transparent;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px); /* For Safari support */
 }
 .logoutBtn button {
+  transition: 0.2s ease;
   flex-basis: 20%;
   padding: 0.6rem 2.5rem;
   background: transparent;
-  border: 0.1rem solid var(--accent);
+  border: 0.1rem solid rgba(176, 138, 90, 0.35);
   border-radius: 2rem;
   font-family: "Inter", sans-serif; /* Explicitly re-declare it */
-
   color: var(--text-primary);
   font-weight: 300;
   font-size: 0.9rem;
@@ -39,6 +43,7 @@
   background-color: transparent;
   transition: 0.2s ease-in-out;
   cursor: pointer;
+  border: 0.1rem solid transparent;
 }
 .btn_ball {
   cursor: pointer;
@@ -51,11 +56,21 @@
   transition: 0.2s ease;
 }
 
+/* Hover and active classes .... */
+.logoutBtn button:hover {
+  cursor: pointer;
+}
+.logoutBtn button:active {
+  border: 0.1rem solid rgba(176, 138, 90, 0.85);
+  box-shadow: rgba(176, 138, 90, 0.1) 0px 5px 15px;
+}
 .navItemChild_cover:hover {
-  background-color: rgb(29, 29, 29);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border: 0.1rem solid rgba(176, 138, 90, 0.15);
 }
 .navItemChild_cover:hover ~ .btn_ball {
-  background-color: var(--accent);
+  background-color: rgba(176, 138, 90, 0.75);
 }
 
 .navItemChild_cover:active ~ .btn_ball {

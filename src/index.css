@@ -9,13 +9,13 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Backgrounds */
-  --bg: #0d0d0d;
-  --bg-secondary: #141414;
+  --bg: #f6f4f0;
+  --bg-secondary: #f6f4f0;
   --surface: #1a1a1a;
   --surface-hover: #202020;
 
   /* Typography */
-  --text-primary: #f3efe8;
+  --text-primary: #141414;
   --text-secondary: #cfc8bd;
   --text-muted: #9d968c;
   --text-disabled: #706a62;
