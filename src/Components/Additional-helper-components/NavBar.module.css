@@ -1,5 +1,5 @@
 .parentBar {
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
   background: transparent;
   color: var(--text-primary);
   text-transform: capitalize;
@@ -14,8 +14,8 @@
   font-weight: 300;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  font-size: 0.9rem;
+  gap: 2rem;
+  font-size: 0.8rem;
   /* border: 0.1rem solid var(--accent); */
   border: 0.1rem solid rgba(176, 138, 90, 0.35);
   padding: 0.75rem 2.75rem 0.15rem 2.75rem;

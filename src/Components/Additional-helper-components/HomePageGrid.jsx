@@ -2,6 +2,7 @@ import classes from "./HomePageGrid.module.css";
 import { Box, Grid } from "@mui/material";
 import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
 // import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+
 import TwoFloorDiv from "../DRYComponents/TwoFloorDiv";
 const HomePageGrid = () => {
   return (
@@ -13,10 +14,19 @@ const HomePageGrid = () => {
             <p> Welome to my portfolio</p>
           </Box>
           <Box>
-            <p> Your next best investment</p>
+            <p>
+              {" "}
+              Your next
+              <br /> best investment
+            </p>
+            <hr />
           </Box>
           <Box>
-            <h4> Strategic solution</h4>
+            <p>
+              {" "}
+              Strategic solutions that drive growth,build value and create
+              lasting impact.
+            </p>
           </Box>
           <Box>
             <button> View my work</button>
