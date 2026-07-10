@@ -1,6 +1,7 @@
 import classes from "./HomePageGrid.module.css";
 import { Box, Grid } from "@mui/material";
 import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
+import zeusPng from "../../assets/zeus.png";
 // import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 import TwoFloorDiv from "../DRYComponents/TwoFloorDiv";
@@ -17,30 +18,33 @@ const HomePageGrid = () => {
             <p>
               {" "}
               Your next
-              <br /> best investment
+              <br /> best investment.
             </p>
-            <hr />
+            {/* <hr /> */}
           </Box>
           <Box>
+            <img src={zeusPng} />
+          </Box>
+          {/* <Box>
             <p>
               {" "}
               Strategic solutions that drive growth,build value and create
               lasting impact.
             </p>
-          </Box>
-          <Box>
+          </Box> */}
+          {/* <Box>
             <button> View my work</button>
-          </Box>
-          <Box className={classes.expDividerText}>
+          </Box> */}
+          {/* <Box className={classes.expDividerText}>
             <TwoFloorDiv />
             <TwoFloorDiv />
             <TwoFloorDiv />
-          </Box>
+          </Box> */}
           <Box></Box>
         </Grid>
-        <Grid className={classes.rightGrid}>
+        {/* <Grid className={classes.rightGrid}>
           <Box>This is 2</Box>
-        </Grid>
+        </Grid> */}
       </BasicCoverDiv>
       {/* </Grid> */}
     </>
