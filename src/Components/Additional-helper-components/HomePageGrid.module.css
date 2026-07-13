@@ -18,13 +18,15 @@
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--text-secondary);
+  margin-bottom: 1rem;
 }
 .leftGrid > :nth-child(2) {
-  margin-top: 0.5rem;
+  background: transparent;
   font-family: "Italiana", serif;
-  font-size: 6.5rem;
+  font-size: 7rem;
   font-weight: 900;
   z-index: 9999;
+  margin: auto;
 }
 .leftGrid hr {
   background: rgba(176, 138, 90, 0.65);
@@ -39,12 +41,17 @@
   font-size: 1rem;
   color: var(--accent-dark);
   margin-top: 2rem;
-  width: 100%;
+  width: 50%;
+  margin: auto;
+  /* border: 0.1rem solid grey; */
   position: absolute;
-  top: 0;
+  top: 5%;
+  right: 26%;
   z-index: -1;
 }
-
+.leftGrid > :nth-child(3) img {
+  height: 40rem;
+}
 .leftGrid > :nth-child(4) button {
   background-color: var(--text-primary);
   font-family: "Inter";
@@ -61,4 +68,12 @@
 
 .expDividerText {
   margin-top: 2rem;
+}
+.txt_1 {
+  background-color: rgb(0, 85, 255, 0.45);
+  color: white;
+  margin-right: 1rem;
+}
+.txt_2 {
+  margin-left: 2rem;
 }

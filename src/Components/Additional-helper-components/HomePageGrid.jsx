@@ -15,10 +15,12 @@ const HomePageGrid = () => {
             <p> Welome to my portfolio</p>
           </Box>
           <Box>
-            <p>
+            <p style={{ background: "transparent", backdropFilter: blur(2) }}>
               {" "}
-              Your next
-              <br /> best investment.
+              <span className={classes.txt_1}>Your </span>
+              <span className={classes.txt_2}> next</span>
+              <br />
+              best <span className={classes.txt_1}>investment. </span>
             </p>
             {/* <hr /> */}
           </Box>
