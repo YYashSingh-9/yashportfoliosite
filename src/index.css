@@ -15,7 +15,8 @@
   --surface-hover: #202020;
   /* Typography */
   --text-primary: #141414;
-  --text-secondary: #af7035;
+  --text-subtitle: rgb(7, 7, 7);
+  --text-secondary: #764a21;
   --text-muted: #9d968c;
   --text-disabled: #706a62;
   --button-text: #ede7df;

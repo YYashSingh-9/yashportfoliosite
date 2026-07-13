@@ -18,15 +18,18 @@
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   color: var(--text-secondary);
-  margin-bottom: 1rem;
 }
 .leftGrid > :nth-child(2) {
   background: transparent;
-  font-family: "Italiana", serif;
-  font-size: 7rem;
-  font-weight: 900;
+  color: var(--text-subtitle);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 9rem;
+  letter-spacing: -0.1rem;
+  font-weight: 500;
   z-index: 9999;
   margin: auto;
+  line-height: 1.29;
+  margin-top: 2rem;
 }
 .leftGrid hr {
   background: rgba(176, 138, 90, 0.65);
@@ -37,7 +40,7 @@
   margin-top: 1rem;
 }
 .leftGrid > :nth-child(3) {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Italiana", serif;
   font-size: 1rem;
   color: var(--accent-dark);
   margin-top: 2rem;
@@ -70,11 +73,11 @@
   margin-top: 2rem;
 }
 .txt_1 {
-  background: rgba(255, 255, 255, 0.45);
-  padding: 0rem 1.2rem;
-  color: rgb(0, 0, 0);
+  background: rgba(235, 168, 11, 0.15);
+  color: rgb(7, 7, 7);
   border-radius: 0.2rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0rem 0.5rem;
 }
 .txt_2 {
   margin-left: 2rem;
