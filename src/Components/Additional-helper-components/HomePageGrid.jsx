@@ -12,7 +12,7 @@ const HomePageGrid = () => {
       <BasicCoverDiv direction="row">
         <Grid className={classes.leftGrid}>
           <Box>
-            <p> Welome to my portfolio</p>
+            <p> Welcome to my portfolio</p>
           </Box>
           <Box>
             <p style={{ background: "transparent", backdropFilter: blur(2) }}>
