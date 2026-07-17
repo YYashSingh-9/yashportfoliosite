@@ -5,7 +5,8 @@ import { Provider } from "react-redux";
 import store from "./Store/mainStore.js";
 import App from "./App.jsx";
 import "./index.css";
-import LandingPage from "./Components/Top-level-components/LandingPage.jsx";
+import HomePage from "./Components/Top-level-components/HomePage.jsx";
+import AboutPage from "./Components/Top-level-components/AboutPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <LandingPage />,
-        children: [{ path: "/about-me-page" }],
+        element: <HomePage />,
       },
     ],
   },
