@@ -9,13 +9,29 @@ const AboutPage = () => {
       <BasicCoverDiv direction={"column"}>
         <Box className={classes.parentLayer}>
           <Box className={classes.firstLayer}>
-            <Box>This is about me</Box>
-            <Box>This is also about me</Box>
+            <Box>
+              <p>This is about me</p>
+              <button>Read more</button>
+            </Box>
+            <Box>
+              <p>This is also about me</p> <button>Read more</button>
+            </Box>
           </Box>
           <Box className={classes.secondLayer}>
-            <img src={vaseImg} />
+            <p>About me</p>
+            <Box>
+              <img src={vaseImg} />
+            </Box>
           </Box>
-          <Box className={classes.thirdLayer}></Box>
+          <Box className={classes.thirdLayer}>
+            <Box>
+              <p>This is about me</p>
+              <button>Read more</button>
+            </Box>
+            <Box>
+              <p>This is also about me</p> <button>Read more</button>
+            </Box>
+          </Box>
         </Box>
       </BasicCoverDiv>
     </>
