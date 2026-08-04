@@ -1,7 +1,3 @@
-.parentLayer {
-  min-height: 95vh;
-  margin-top: 2rem;
-}
 .firstLayer,
 .thirdLayer {
   display: flex;
@@ -45,6 +41,5 @@
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   border-radius: 1rem;
-  padding-top: 1rem;
-  background-color: blue;
+  border: 0.1rem solid black;
 }

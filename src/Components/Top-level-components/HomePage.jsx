@@ -14,7 +14,7 @@ const HomePage = () => {
         <Grid item>
           <HomePageGrid />
         </Grid>
-        <Grid item sx={{ mt: 18 }}>
+        <Grid item>
           <AboutPage />
         </Grid>
       </Grid>
