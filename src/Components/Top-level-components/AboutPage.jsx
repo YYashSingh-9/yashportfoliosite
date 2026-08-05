@@ -2,6 +2,7 @@ import classes from "./AboutPage.module.css";
 import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
 import vaseImg from "../../assets/whitevase.png";
 import { Box } from "@mui/material";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 const AboutPage = () => {
   const clickevent = () => {
@@ -18,7 +19,9 @@ const AboutPage = () => {
                 <span className={classes.highlighted_text}> hire me</span>{" "}
                 ?{" "}
               </p>
-              <button onClick={clickevent}>Read this please..</button>
+              <button onClick={clickevent}>
+                Read this please.. <ArrowOutwardIcon />
+              </button>
             </Box>
             <Box>
               <p>
@@ -26,7 +29,9 @@ const AboutPage = () => {
                 <span className={classes.highlighted_text}> stand out</span>{" "}
                 from the crowd.
               </p>{" "}
-              <button onClick={clickevent}>Click here please.</button>
+              <button onClick={clickevent}>
+                Click here please. <ArrowOutwardIcon />
+              </button>
             </Box>
           </Box>
           <Box className={classes.secondLayer}>
@@ -46,6 +51,7 @@ const AboutPage = () => {
               </p>
               <button onClick={clickevent}>
                 It would be great, if you read this.
+                <ArrowOutwardIcon />
               </button>
             </Box>
             <Box>
@@ -54,7 +60,8 @@ const AboutPage = () => {
                 <span className={classes.highlighted_text}>opinion. </span>{" "}
               </p>
               <button onClick={clickevent}>
-                Very direct but explains my true self, please read.
+                Very direct but explains my true self, do read.
+                <ArrowOutwardIcon />
               </button>
             </Box>
           </Box>
