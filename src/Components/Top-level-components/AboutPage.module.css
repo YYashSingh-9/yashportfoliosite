@@ -1,4 +1,5 @@
 .parentLayer {
+  margin-top: 10rem;
   padding: 0rem 10%;
   background-color: rgb(230, 230, 230);
   z-index: 999;
@@ -74,4 +75,11 @@
 .highlighted_text {
   background: rgba(235, 168, 11, 0.15);
   padding: 0rem 0.2rem;
+}
+.firstLayer button:active,
+.thirdLayer button:active {
+  border-bottom: 0.11rem solid rgb(23, 23, 23);
+  transition: 0.1s ease;
+  color: black;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 12px 12px -12px;
 }

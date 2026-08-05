@@ -24,11 +24,11 @@
   color: var(--text-subtitle);
   font-family: "Lexend Deca", sans-serif;
   font-size: 9rem;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.4rem;
   font-weight: 500;
   z-index: 9999;
   margin: auto;
-  line-height: 1.29;
+  line-height: 1.4;
   margin-top: 2rem;
 }
 .leftGrid hr {
