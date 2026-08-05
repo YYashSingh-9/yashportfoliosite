@@ -4,6 +4,9 @@ import vaseImg from "../../assets/whitevase.png";
 import { Box } from "@mui/material";
 
 const AboutPage = () => {
+  const clickevent = () => {
+    console.log("this click works.");
+  };
   return (
     <>
       <BasicCoverDiv direction={"column"}>
@@ -15,7 +18,7 @@ const AboutPage = () => {
                 <span className={classes.highlighted_text}> hire me</span>{" "}
                 ?{" "}
               </p>
-              <button>Read this please..</button>
+              <button onClick={clickevent}>Read this please..</button>
             </Box>
             <Box>
               <p>
@@ -23,7 +26,7 @@ const AboutPage = () => {
                 <span className={classes.highlighted_text}> stand out</span>{" "}
                 from the crowd.
               </p>{" "}
-              <button>Click here please.</button>
+              <button onClick={clickevent}>Click here please.</button>
             </Box>
           </Box>
           <Box className={classes.secondLayer}>
@@ -41,11 +44,16 @@ const AboutPage = () => {
                   contribute more.
                 </span>
               </p>
-              <button>It would be great, if you read this.</button>
+              <button onClick={clickevent}>
+                It would be great, if you read this.
+              </button>
             </Box>
             <Box>
-              <p>My blunt honest opinion.</p>
-              <button>
+              <p>
+                My blunt honest{" "}
+                <span className={classes.highlighted_text}>opinion. </span>{" "}
+              </p>
+              <button onClick={clickevent}>
                 Very direct but explains my true self, please read.
               </button>
             </Box>

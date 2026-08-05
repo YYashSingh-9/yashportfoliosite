@@ -1,3 +1,9 @@
+.parentLayer {
+  padding: 0rem 10%;
+  background-color: rgb(230, 230, 230);
+  z-index: 999;
+  height: 100vh;
+}
 .firstLayer,
 .thirdLayer {
   display: flex;
@@ -25,9 +31,9 @@
 }
 .secondLayer > :nth-child(2) {
   position: absolute;
-  left: 33%;
+  left: 29%;
   top: -20%;
-  z-index: -1;
+  z-index: -998;
 }
 .secondLayer > :nth-child(2) img {
   height: 22rem;
@@ -36,35 +42,36 @@
 .firstLayer > :nth-child(2),
 .thirdLayer > :nth-child(1),
 .thirdLayer > :nth-child(2) {
-  width: 30%;
+  width: 35%;
   height: 22vh;
   text-align: center;
   border-radius: 1rem;
 }
 
-.firstLayer > :nth-child(1) p,
-.firstLayer > :nth-child(2) p,
-.thirdLayer > :nth-child(1) p,
-.thirdLayer > :nth-child(2) p {
+.firstLayer p,
+.thirdLayer p {
   margin-top: 3rem;
   font-size: 1.7rem;
   font-family: "Inter";
   font-weight: 700;
   letter-spacing: -0.1rem;
 }
-.thirdLayer > :nth-child(1) p,
-.thirdLayer > :nth-child(2) p {
+.thirdLayer p,
+.thirdLayer p {
   margin-top: 0rem;
 }
-.firstLayer > :nth-child(1) button,
-.firstLayer > :nth-child(2) button,
-.thirdLayer > :nth-child(1) button,
-.thirdLayer > :nth-child(2) button {
-  margin-top: 1rem;
-  font-size: 0.9rem;
+.firstLayer button,
+.thirdLayer button {
+  margin-top: 0.5rem;
+  font-size: 1rem;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  border-bottom: 0.1rem solid rgb(229, 229, 229);
+  border-bottom: 0.1rem solid rgb(75, 75, 75);
   padding: 0.5rem 1rem;
   background: none;
+  cursor: pointer;
+}
+.highlighted_text {
+  background: rgba(235, 168, 11, 0.15);
+  padding: 0rem 0.2rem;
 }
