@@ -16,7 +16,7 @@
   position: relative;
 }
 .secondLayer > :nth-child(1) {
-  background: rgba(235, 168, 11, 0.15);
+  background: rgba(11, 123, 235, 0.15);
   color: rgb(7, 7, 7);
   border-radius: 0.2rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
