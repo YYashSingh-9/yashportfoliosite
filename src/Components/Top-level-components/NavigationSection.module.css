@@ -1,0 +1,29 @@
+.leftPart {
+  width: 50%;
+  background-color: aquamarine;
+}
+.rightPart {
+  width: 50%;
+  background-color: blueviolet;
+}
+.leftPart > :nth-child(1) {
+  background: transparent;
+  color: var(--text-subtitle);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 6rem;
+  letter-spacing: -0.4rem;
+  font-weight: 500;
+
+  line-height: 1.4;
+  margin-top: 21%;
+}
+.txt_1 {
+  background: rgba(11, 123, 235, 0.25);
+  color: rgb(7, 7, 7);
+  border-radius: 0.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0rem 0.5rem;
+}
+.txt_2 {
+  margin-left: 2rem;
+}

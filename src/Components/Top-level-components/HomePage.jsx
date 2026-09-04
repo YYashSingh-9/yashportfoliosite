@@ -1,7 +1,7 @@
 import { Box, Grid } from "@mui/material";
 import HomePageGrid from "../Additional-helper-components/HomePageGrid";
 import AboutPage from "./AboutPage";
-import NavigationSection from "../Additional-helper-components/NavigationSection";
+import NavigationSection from "./NavigationSection";
 
 const HomePage = () => {
   return (

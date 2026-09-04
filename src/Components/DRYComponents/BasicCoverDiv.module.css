@@ -1,4 +1,5 @@
 .outerGrid {
   /* background-color: rgb(164, 164, 164); */
   min-height: 100vh;
+  border: 1rem solid black;
 }
