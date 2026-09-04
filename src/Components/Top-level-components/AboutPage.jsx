@@ -1,6 +1,6 @@
 import classes from "./AboutPage.module.css";
 import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
-import vaseImg from "../../assets/whitevase.png";
+import boystanding from "../../assets/aboutImg.png";
 import { Box } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
@@ -37,7 +37,7 @@ const AboutPage = () => {
           <Box className={classes.secondLayer}>
             <p>About me.</p>
             <Box>
-              <img src={vaseImg} />
+              <img src={boystanding} />
             </Box>
           </Box>
           <Box className={classes.thirdLayer}>

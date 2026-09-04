@@ -72,7 +72,7 @@
   cursor: pointer;
 }
 .highlighted_text {
-  background: rgba(235, 168, 11, 0.15);
+  background: rgba(11, 123, 235, 0.25);
   padding: 0rem 0.2rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.2rem;

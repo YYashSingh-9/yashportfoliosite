@@ -32,7 +32,7 @@ const HomePageGrid = () => {
           </Box>
 
           <Box>
-            <button>Tap</button>
+            <button className={classes.btn_base}>Tap</button>
             <Box className={classes.btn_ball}></Box>
           </Box>
         </Grid>
