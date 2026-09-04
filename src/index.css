@@ -19,8 +19,8 @@
   --text-secondary: #764a21;
   --text-muted: #9d968c;
   --text-disabled: #706a62;
-  --button-text: #ede7df;
-
+  --button-text: #f1f1f1;
+  --semi-heading-text: rgba(10, 53, 139, 0.75);
   /* Accent */
   --accent: #b08a5a;
   --accent-hover: #c59a64;

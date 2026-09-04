@@ -1,10 +1,10 @@
 import classes from "./HomePageGrid.module.css";
 import { Box, Grid } from "@mui/material";
 import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
-import zeusPng from "../../assets/zeus.png";
-// import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-
+import zeusPng from "../../assets/sitting_bg.png";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import TwoFloorDiv from "../DRYComponents/TwoFloorDiv";
+
 const HomePageGrid = () => {
   return (
     <>
@@ -12,43 +12,30 @@ const HomePageGrid = () => {
       <BasicCoverDiv direction="row">
         <Grid className={classes.leftGrid}>
           <Box>
-            <p> Welcome to my portfolio</p>
+            <p>
+              {" "}
+              <span className={classes.txt_highlighter}> portfolio</span> of
+              Yash
+            </p>
           </Box>
           <Box>
-            <p style={{ background: "transparent", backdropFilter: blur(2) }}>
+            {/* <p style={{ background: "transparent", backdropFilter: blur(2) }}>
               {" "}
               <span className={classes.txt_1}>Your </span>
               <span className={classes.txt_2}> next</span>
               <br />
               best <span className={classes.txt_1}>investment. </span>
-            </p>
-            {/* <hr /> */}
+            </p> */}
           </Box>
           <Box>
             <img src={zeusPng} />
           </Box>
-          {/* <Box>
-            <p>
-              {" "}
-              Strategic solutions that drive growth,build value and create
-              lasting impact.
-            </p>
-          </Box> */}
-          {/* <Box>
-            <button> View my work</button>
-          </Box> */}
-          {/* <Box className={classes.expDividerText}>
-            <TwoFloorDiv />
-            <TwoFloorDiv />
-            <TwoFloorDiv />
-          </Box> */}
-          <Box></Box>
+
+          <Box>
+            <button>Tap</button>
+          </Box>
         </Grid>
-        {/* <Grid className={classes.rightGrid}>
-          <Box>This is 2</Box>
-        </Grid> */}
       </BasicCoverDiv>
-      {/* </Grid> */}
     </>
   );
 };

@@ -12,12 +12,16 @@
 }
 
 .leftGrid > :nth-child(1) {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  color: var(--text-secondary);
+  color: var(--text-subtitle);
+}
+.txt_highlighter {
+  background: rgba(11, 123, 235, 0.25);
+  padding: 0.4rem 0.4rem;
 }
 .leftGrid > :nth-child(2) {
   background: transparent;
@@ -46,34 +50,39 @@
   margin-top: 2rem;
   width: 50%;
   margin: auto;
+
   /* border: 0.1rem solid grey; */
-  position: absolute;
-  top: 5%;
+  /* position: absolute;
+  top: 20%;
   right: 26%;
-  z-index: -1;
+  z-index: -1; */
 }
 .leftGrid > :nth-child(3) img {
-  height: 40rem;
+  height: 30rem;
 }
 .leftGrid > :nth-child(4) button {
-  background-color: var(--text-primary);
+  background-color: rgb(7, 7, 7);
   font-family: "Inter";
   color: var(--button-text);
   padding: 0.6rem 2rem;
   border-radius: 2rem;
   text-transform: capitalize;
-  margin-top: 2rem;
+  transition: 0.1s ease-in-out;
   font-size: 0.9rem;
+  border: 0.1rem solid var(--text-subtitle);
+  cursor: pointer;
 }
-.expDividerText > :nth-child(3) {
-  border-right: none;
+.leftGrid > :nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 18%;
+  margin: auto;
+  margin-top: 2rem;
 }
 
-.expDividerText {
-  margin-top: 2rem;
-}
 .txt_1 {
-  background: rgba(11, 123, 235, 0.15);
+  background: rgba(11, 123, 235, 0.25);
   color: rgb(7, 7, 7);
   border-radius: 0.2rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -81,4 +90,10 @@
 }
 .txt_2 {
   margin-left: 2rem;
+}
+
+.leftGrid > :nth-child(4) button:active {
+  background-color: rgba(11, 123, 235, 0.25);
+  color: black;
+  border: 0.1rem solid rgba(11, 123, 235, 0.25);
 }
