@@ -7,14 +7,7 @@ const navItems = ["Home", "About", "Work", "Services", "Contact"];
 const NavBar = () => {
   return (
     <>
-      <Toolbar
-        variant="dense"
-        sx={{ justifyContent: "space-between", alignContent: "center" }}
-        className={classes.parentBar}
-      >
-        <Box>
-          <h2>Y.</h2>
-        </Box>
+      <Toolbar variant="dense" className={classes.parentBar}>
         <Box className={classes.childBar}>
           {navItems.map((el) => {
             return (
@@ -26,11 +19,6 @@ const NavBar = () => {
               </Box>
             );
           })}
-        </Box>
-        <Box className={classes.logoutBtn}>
-          <button>
-            <p>let's talk</p>
-          </button>
         </Box>
       </Toolbar>
     </>

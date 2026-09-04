@@ -36,15 +36,9 @@
   font-family: "Italiana", serif;
   font-size: 1rem;
   color: var(--accent-dark);
-  margin-top: 2rem;
   width: 50%;
   margin: auto;
-
-  /* border: 0.1rem solid grey; */
-  /* position: absolute;
-  top: 20%;
-  right: 26%;
-  z-index: -1; */
+  margin-top: 1rem;
 }
 .leftGrid > :nth-child(3) img {
   height: 30rem;
@@ -62,16 +56,22 @@
   cursor: pointer;
 }
 .leftGrid > :nth-child(4) {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 18%;
+  width: 19%;
   margin: auto;
   margin-top: 2rem;
 }
 
-.leftGrid > :nth-child(4) button:active {
-  background-color: rgba(11, 123, 235, 0.25);
-  color: black;
-  border: 0.1rem solid rgba(11, 123, 235, 0.25);
+.btn_ball {
+  cursor: pointer;
+  height: 0.3rem;
+  width: 0.3rem;
+  margin: auto;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  transition: 0.2s ease;
+}
+.leftGrid > :nth-child(4) button:active ~ .btn_ball {
+  background-color: rgb(8, 8, 8);
+  box-shadow: rgb(255, 0, 0) 20px 50px 35px;
 }

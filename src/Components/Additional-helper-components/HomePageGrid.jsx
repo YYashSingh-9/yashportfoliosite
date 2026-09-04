@@ -33,6 +33,7 @@ const HomePageGrid = () => {
 
           <Box>
             <button>Tap</button>
+            <Box className={classes.btn_ball}></Box>
           </Box>
         </Grid>
       </BasicCoverDiv>

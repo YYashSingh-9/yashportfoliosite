@@ -1,10 +1,15 @@
 .leftPart {
-  width: 50%;
-  background-color: aquamarine;
+  width: 60%;
 }
 .rightPart {
-  width: 50%;
-  background-color: blueviolet;
+  width: 40%;
+
+  border-radius: 1rem;
+  margin-left: auto;
+  background: transparent;
+  background-color: var(--bg-dark-surface);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 .leftPart > :nth-child(1) {
   background: transparent;
@@ -13,7 +18,7 @@
   font-size: 6rem;
   letter-spacing: -0.4rem;
   font-weight: 500;
-
+  margin-left: 5%;
   line-height: 1.4;
   margin-top: 21%;
 }
