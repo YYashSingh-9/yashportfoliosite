@@ -1,8 +1,8 @@
 import classes from "./MyWorkPage.module.css";
-import img from "../../assets/guywlaptop.png";
 
 const MyWorkPage = () => {
-  return <></>;
+  return;
+  <></>;
 };
 
 export default MyWorkPage;

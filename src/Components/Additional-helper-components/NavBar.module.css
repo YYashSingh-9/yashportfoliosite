@@ -14,9 +14,9 @@
   align-items: center;
   flex-wrap: wrap;
   margin-top: 3rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: "Lexend Deca", serif;
-  border: 0.1rem solid rgba(251, 251, 251, 0.55);
+  border: 0.1rem solid rgba(107, 107, 107, 0.55);
   padding: 0.75rem 2.75rem 0.15rem 2.75rem;
   border-radius: 1rem;
   background: transparent;
@@ -24,7 +24,7 @@
   -webkit-backdrop-filter: blur(2px); /* For Safari support */
   width: 15rem;
   height: 80vh;
-  text-transform: capitalize;
+  text-transform: uppercase;
   z-index: 1;
 }
 .navBG_img {
@@ -35,6 +35,7 @@
   transform: translate(-50% -50%);
   /* letter-spacing: 1rem; */
   font-family: "Inter", "serif";
+  display: none;
 }
 
 .navBG_img {

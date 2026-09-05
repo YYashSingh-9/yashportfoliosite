@@ -3,6 +3,7 @@
   background-color: rgb(230, 230, 230);
   z-index: 999;
   height: 100vh;
+  /* background-color: transparent; */
 }
 .firstLayer,
 .thirdLayer {
@@ -15,16 +16,26 @@
   height: 22rem;
   position: relative;
 }
-.semi_highlight_txt {
-  color: rgb(230, 230, 230);
-}
+
 .secondLayer > :nth-child(1) {
+  height: 15vh;
+  width: 40%;
+  background-color: rgba(11, 123, 235, 0.25);
+  margin: auto;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.2rem;
   position: absolute;
-  left: 25%;
+  top: 0%;
+  left: 35%;
+}
+.secondLayer > :nth-child(2) {
+  position: absolute;
+  left: 30%;
   top: 3%;
   z-index: -998;
 }
-.secondLayer > :nth-child(1) img {
+
+.secondLayer > :nth-child(2) img {
   height: 35rem;
 }
 .firstLayer > :nth-child(1),
@@ -60,12 +71,7 @@
   background: none;
   cursor: pointer;
 }
-.highlighted_text {
-  background: rgba(11, 123, 235, 0.25);
-  padding: 0rem 0.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 0.2rem;
-}
+
 .firstLayer button:active,
 .thirdLayer button:active {
   border-bottom: 0.11rem solid rgb(23, 23, 23);

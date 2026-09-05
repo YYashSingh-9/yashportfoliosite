@@ -15,12 +15,12 @@ const AboutPage = () => {
           <Box className={classes.firstLayer}>
             <Box>
               <p>
-                Thinking why should you{" "}
-                <span className={classes.highlighted_text}> hire me</span>{" "}
-                ?{" "}
+                Why i should be your choice{" "}
+                {/* <span className={classes.highlighted_text}> hire me</span>{" "}
+                ?{" "} */}
               </p>
               <button onClick={clickevent}>
-                Read this please.. <ArrowOutwardIcon />
+                Read this <ArrowOutwardIcon />
               </button>
             </Box>
             <Box>
@@ -30,35 +30,26 @@ const AboutPage = () => {
                 from the crowd.
               </p>{" "}
               <button onClick={clickevent}>
-                Click here please. <ArrowOutwardIcon />
+                Click here. <ArrowOutwardIcon />
               </button>
             </Box>
           </Box>
           <Box className={classes.secondLayer}>
+            <Box></Box>
             <Box>
               <img src={boystanding} />
             </Box>
           </Box>
           <Box className={classes.thirdLayer}>
             <Box>
-              <p>
-                How i am able to{" "}
-                <span className={classes.highlighted_text}>
-                  {" "}
-                  contribute m
-                  <span className={classes.semi_highlight_txt}>ore. </span>
-                </span>
-              </p>
+              <p>Why i will contribute more.</p>
               <button onClick={clickevent}>
                 It would be great, if you read this.
                 <ArrowOutwardIcon />
               </button>
             </Box>
             <Box>
-              <p>
-                My blunt honest{" "}
-                <span className={classes.highlighted_text}>opinion. </span>{" "}
-              </p>
+              <p>My direct & honest opinion.</p>
               <button onClick={clickevent}>
                 Very direct but explains my true self, do read.
                 <ArrowOutwardIcon />
