@@ -35,7 +35,6 @@ const AboutPage = () => {
             </Box>
           </Box>
           <Box className={classes.secondLayer}>
-            <p>About me.</p>
             <Box>
               <img src={boystanding} />
             </Box>
@@ -46,7 +45,8 @@ const AboutPage = () => {
                 How i am able to{" "}
                 <span className={classes.highlighted_text}>
                   {" "}
-                  contribute more.
+                  contribute m
+                  <span className={classes.semi_highlight_txt}>ore. </span>
                 </span>
               </p>
               <button onClick={clickevent}>

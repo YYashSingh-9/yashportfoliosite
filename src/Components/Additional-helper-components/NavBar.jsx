@@ -2,8 +2,15 @@ import classes from "./NavBar.module.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
+import nav_BG from "../../assets/nav_bg.png";
 
-const navItems = ["Home", "About", "Work", "Services", "Contact"];
+const navItems = [
+  "Start here",
+  "Know me",
+  "see my work",
+  "what i do",
+  "let's talk",
+];
 const NavBar = () => {
   return (
     <>
@@ -19,6 +26,9 @@ const NavBar = () => {
               </Box>
             );
           })}
+        </Box>
+        <Box className={classes.navBG_img}>
+          <img src={nav_BG} />
         </Box>
       </Toolbar>
     </>

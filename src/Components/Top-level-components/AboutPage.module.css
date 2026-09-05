@@ -15,28 +15,17 @@
   height: 22rem;
   position: relative;
 }
-.secondLayer > :nth-child(1) {
-  background: rgba(11, 123, 235, 0.15);
-  color: rgb(7, 7, 7);
-  border-radius: 0.2rem;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0rem 0.5rem;
-  font-family: "Lexend Deca", serif;
-  font-size: 6rem;
-  width: 35%;
-  margin: auto;
-  letter-spacing: -0.5rem;
-  font-weight: 500;
-  margin-top: 2rem;
+.semi_highlight_txt {
+  color: rgb(230, 230, 230);
 }
-.secondLayer > :nth-child(2) {
+.secondLayer > :nth-child(1) {
   position: absolute;
-  left: 29%;
-  top: -20%;
+  left: 25%;
+  top: 3%;
   z-index: -998;
 }
-.secondLayer > :nth-child(2) img {
-  height: 22rem;
+.secondLayer > :nth-child(1) img {
+  height: 35rem;
 }
 .firstLayer > :nth-child(1),
 .firstLayer > :nth-child(2),

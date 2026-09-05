@@ -2,11 +2,10 @@
   width: 60%;
 }
 .rightPart {
-  width: 40%;
+  width: 35%;
 
   border-radius: 1rem;
   margin-left: auto;
-  background: transparent;
   background-color: var(--bg-dark-surface);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
