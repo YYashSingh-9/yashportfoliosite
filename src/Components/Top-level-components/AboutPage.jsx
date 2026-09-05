@@ -42,7 +42,7 @@ const AboutPage = () => {
           </Box>
           <Box className={classes.thirdLayer}>
             <Box>
-              <p>Why i will contribute more.</p>
+              <p>How i will contribute more.</p>
               <button onClick={clickevent}>
                 It would be great, if you read this.
                 <ArrowOutwardIcon />
