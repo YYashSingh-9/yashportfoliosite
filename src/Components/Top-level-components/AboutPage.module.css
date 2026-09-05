@@ -4,6 +4,7 @@
   z-index: 999;
   height: 100vh;
   /* background-color: transparent; */
+  border-radius: 1rem;
 }
 .firstLayer,
 .thirdLayer {
