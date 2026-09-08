@@ -1,9 +1,11 @@
 .left_grid,
 .right_grid {
   width: 49.5%;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-row: 1fr 1fr;
   justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
 }
 .midLine {
   width: 0.1rem;
@@ -38,4 +40,10 @@
 }
 .iconflip {
   transform: rotate(45deg);
+}
+.left_grid_wide {
+  grid-row: 1fr;
+}
+.right_grid_wide {
+  grid-row: 1fr;
 }

@@ -1,0 +1,24 @@
+.parentCard {
+  border: 0.1rem solid var(--text-primary);
+  height: 60vh;
+  max-width: 16vw;
+}
+.innerGrid {
+  display: grid;
+  padding: 0rem 0.5rem;
+  grid-template-rows: 70% 20% 10%;
+  grid-template-columns: 100%;
+}
+.innerGrid > :nth-child(1) {
+  border: 0.1rem solid var(--text-primary);
+  width: inherit;
+}
+.innerGrid > :nth-child(2) {
+  text-align: center;
+}
+.innerGrid > :nth-child(2) h2 {
+  font-size: 1.1rem;
+}
+.innerGrid > :nth-child(2) p {
+  font-size: 0.9rem;
+}

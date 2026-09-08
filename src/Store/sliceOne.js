@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const sliceOne = createSlice({
   name: "sliceOne",
-  initialState: "",
+  initialState: {},
 });
 
 export default sliceOne;

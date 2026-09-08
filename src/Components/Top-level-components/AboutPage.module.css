@@ -19,14 +19,14 @@
 }
 
 .secondLayer > :nth-child(1) {
-  height: 15vh;
-  width: 40%;
+  height: 10vh;
+  width: 30%;
   background-color: rgba(11, 123, 235, 0.25);
   margin: auto;
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
   border-radius: 0.2rem;
   position: absolute;
-  top: 0%;
+  top: 10%;
   left: 35%;
 }
 .secondLayer > :nth-child(2) {
