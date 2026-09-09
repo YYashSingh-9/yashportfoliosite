@@ -4,20 +4,21 @@ import { Grid, Box } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import { useState } from "react";
 import InfoCard from "../DRYComponents/InfoCard";
+import { motion } from "framer-motion";
 
 //Helper component
 const SectionButton = (props) => {
   //CLICK FUNCTION
   const click_fnction = () => {
-    let passing_prop = props.title === "Technical work" ? "tech" : "non_tech";
-    props.clickFn(passing_prop);
+    let propToPass = props.title === "tech" ? props.title : "non_tech";
+    props.clickFn(propToPass);
   };
 
   return (
     <>
       <button className={classes.wrkSectionBtn} onClick={click_fnction}>
         {props.title}{" "}
-        <span className={props.clss}>
+        <span className={props.icon_class}>
           {" "}
           <AddIcon />
         </span>
@@ -27,63 +28,61 @@ const SectionButton = (props) => {
 };
 
 const MyWorkPage = () => {
-  const [openSectionState, setOpenSectionState] = useState(false);
-  const [techSectionState, set_techSectionState] = useState(false);
-  const [non_techSectionState, set_non_techSectionState] = useState(false);
+  //1. Managing state.
+  const [activeSelection, setActiveSelection] = useState(null);
 
-  let tech_sectionClasses =
-    techSectionState === true
-      ? `${classes.left_grid} ${classes.left_grid_wide}`
-      : `${classes.left_grid}`;
+  //2. Toggling state.
+  const toggleSelection = (selection) => {
+    setActiveSelection((prevState) =>
+      prevState === selection ? null : selection,
+    );
+  };
 
-  let nonTech_sectionClasses =
-    openSectionState && non_techSectionState === true
-      ? `${classes.right_grid} ${classes.right_grid_wide}`
-      : `${classes.right_grid}`;
+  //3. Manging helper state.
+  const isTechOpen = activeSelection === "tech";
+  const isNonTechOpen = activeSelection === "non_tech";
 
-  const btn_class =
-    openSectionState === false
-      ? `${classes.plus_icn}`
-      : `${classes.plus_icn} ${classes.iconflip}`;
-
-  const clickfn = (props) => {
-    setOpenSectionState(!openSectionState);
-    if (props === "tech") {
-      set_techSectionState(!techSectionState);
-    }
-    if (props === "non_tech") {
-      set_non_techSectionState(!non_techSectionState);
-    }
+  //4. Toggling component classes.
+  const tech_sectionClasses = `${classes.left_grid} ${isTechOpen ? classes.left_grid_wide : ""}`;
+  const nonTech_sectionClasses = `${classes.right_grid} ${isNonTechOpen ? classes.right_grid_wide : ""}`;
+  const iconClassFlip = (isExpanded) => {
+    return `${classes.plus_icn} ${isExpanded ? classes.iconflip : ""}`;
   };
 
   return (
     <>
-      <BasicCoverDiv direction="row">
-        {non_techSectionState !== true && (
-          <Grid item className={tech_sectionClasses}>
-            <Box>
-              {/* <SectionButton
-                clss={btn_class}
-                clickFn={clickfn}
-                title="Technical work"
+      <BasicCoverDiv className={classes.parentContainer}>
+        <motion.div
+          layout
+          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          className={`${classes.gridItem} ${classes}`}
+        ></motion.div>
+        {/* {!isNonTechOpen && ( */}
+        {/* <Grid item className={tech_sectionClasses}>
+            <Box> */}
+        {/* <SectionButton
+                icon_class={iconClassFlip(isTechOpen)}
+                clickFn={toggleSelection}
+                title="tech"
               /> */}
-              <InfoCard />
-            </Box>
-          </Grid>
-        )}
+        {/* <InfoCard /> */}
+        {/* </Box>
+          </Grid> */}
+        {/* )} */}
 
-        <Box className={classes.midLine}></Box>
-        {techSectionState !== true && (
-          <Grid item className={nonTech_sectionClasses}>
-            <Box>
-              <SectionButton
-                clss={btn_class}
-                clickFn={clickfn}
-                title="Non-technical work"
-              />
-            </Box>
-          </Grid>
-        )}
+        {/* {!activeSelection && <Box className={classes.midLine}></Box>} */}
+
+        {/* {!isTechOpen && ( */}
+        {/* <Grid item className={nonTech_sectionClasses}> */}
+        {/* <Box> */}
+        {/* <SectionButton
+                icon_class={iconClassFlip(isTechOpen)}
+                clickFn={toggleSelection}
+                title="non_tech"
+              /> */}
+        {/* </Box>
+          </Grid> */}
+        {/* )} */}
       </BasicCoverDiv>
     </>
   );
