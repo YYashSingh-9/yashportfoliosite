@@ -1,24 +1,51 @@
+* {
+  box-sizing: border-box;
+}
 .parentCard {
-  border: 0.1rem solid var(--text-primary);
-  height: 60vh;
-  max-width: 16vw;
+  border: 0.1rem solid var(--border-light);
+  height: 50vh;
+  width: 100%;
+  max-width: 18rem;
+
+  border-radius: 0.5rem;
+  box-shadow:
+    rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
 .innerGrid {
   display: grid;
-  padding: 0rem 0.5rem;
-  grid-template-rows: 70% 20% 10%;
+  padding: 0.5rem 0.5rem;
+  grid-template-rows: 65% 23% 12%;
   grid-template-columns: 100%;
+  width: inherit;
 }
 .innerGrid > :nth-child(1) {
-  border: 0.1rem solid var(--text-primary);
+  border: 0.1rem solid var(--border-light);
   width: inherit;
+  border-radius: 0.5rem;
 }
 .innerGrid > :nth-child(2) {
   text-align: center;
 }
 .innerGrid > :nth-child(2) h2 {
   font-size: 1.1rem;
+  margin-top: 0.5rem;
 }
 .innerGrid > :nth-child(2) p {
   font-size: 0.9rem;
+  margin-top: 0.3rem;
+  margin: 0.3rem 0.4rem 0rem 0.4rem;
+}
+.innerGrid > :nth-child(3) {
+  border-top: 0.1rem solid var(--border-light);
+}
+.innerGrid > :nth-child(3) button {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: auto;
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }

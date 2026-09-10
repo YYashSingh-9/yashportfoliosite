@@ -1,23 +1,38 @@
 import classes from "./MyWorkPage.module.css";
-import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
-import { Grid, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import { useState } from "react";
 import InfoCard from "../DRYComponents/InfoCard";
 import { motion } from "framer-motion";
 
+/*    {!isNonTechOpen && (
+          <Grid item className={tech_sectionClasses}>
+            <Box>
+              {" "}
+            
+              <SectionButton
+                icon_class={iconClassFlip(isTechOpen)}
+                clickFn={toggleSelection}
+                title="tech"
+              />
+              <InfoCard />
+            </Box>
+          </Grid>
+        )}
+*/
+
 //Helper component
 const SectionButton = (props) => {
   //CLICK FUNCTION
   const click_fnction = () => {
-    let propToPass = props.title === "tech" ? props.title : "non_tech";
+    let propToPass = props.btnAbout === "tech" ? props.btnAbout : "non_tech";
     props.clickFn(propToPass);
   };
 
   return (
     <>
       <button className={classes.wrkSectionBtn} onClick={click_fnction}>
-        {props.title}{" "}
+        {props.btnTitle}{" "}
         <span className={props.icon_class}>
           {" "}
           <AddIcon />
@@ -43,47 +58,74 @@ const MyWorkPage = () => {
   const isNonTechOpen = activeSelection === "non_tech";
 
   //4. Toggling component classes.
-  const tech_sectionClasses = `${classes.left_grid} ${isTechOpen ? classes.left_grid_wide : ""}`;
-  const nonTech_sectionClasses = `${classes.right_grid} ${isNonTechOpen ? classes.right_grid_wide : ""}`;
   const iconClassFlip = (isExpanded) => {
     return `${classes.plus_icn} ${isExpanded ? classes.iconflip : ""}`;
   };
 
   return (
     <>
-      <BasicCoverDiv className={classes.parentContainer}>
-        <motion.div
-          layout
-          transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          className={`${classes.gridItem} ${classes}`}
-        ></motion.div>
-        {/* {!isNonTechOpen && ( */}
-        {/* <Grid item className={tech_sectionClasses}>
-            <Box> */}
-        {/* <SectionButton
-                icon_class={iconClassFlip(isTechOpen)}
-                clickFn={toggleSelection}
-                title="tech"
-              /> */}
-        {/* <InfoCard /> */}
-        {/* </Box>
-          </Grid> */}
-        {/* )} */}
+      <div className={classes.parentContainer}>
+        {!isNonTechOpen && (
+          <motion.div
+            layout
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            className={`${classes.gridItem} ${isTechOpen ? classes.fullWidth : classes.halfWidth}`}
+          >
+            <SectionButton
+              icon_class={iconClassFlip(isTechOpen)}
+              clickFn={toggleSelection}
+              btnAbout="tech"
+              btnTitle="Technological"
+            />
 
-        {/* {!activeSelection && <Box className={classes.midLine}></Box>} */}
+            {isTechOpen && (
+              <motion.div
+                layout
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                className={classes.cardsParentContainer}
+              >
+                <InfoCard
+                  cardTitle="Project One"
+                  cardDescription="This is project one made in 1998"
+                />
+                <InfoCard
+                  cardTitle="Project One"
+                  cardDescription="This is project one made in 1998"
+                />{" "}
+                <InfoCard
+                  cardTitle="Project One"
+                  cardDescription="This is project one made in 1998"
+                />{" "}
+                <InfoCard
+                  cardTitle="Project One"
+                  cardDescription="This is project one made in 1998"
+                />{" "}
+                <InfoCard
+                  cardTitle="Project One"
+                  cardDescription="This is project one made in 1998"
+                />
+              </motion.div>
+            )}
+          </motion.div>
+        )}
 
-        {/* {!isTechOpen && ( */}
-        {/* <Grid item className={nonTech_sectionClasses}> */}
-        {/* <Box> */}
-        {/* <SectionButton
-                icon_class={iconClassFlip(isTechOpen)}
-                clickFn={toggleSelection}
-                title="non_tech"
-              /> */}
-        {/* </Box>
-          </Grid> */}
-        {/* )} */}
-      </BasicCoverDiv>
+        {!activeSelection && <Box className={classes.midLine}></Box>}
+
+        {!isTechOpen && (
+          <motion.div
+            layout
+            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            className={`${classes.gridItem} ${isNonTechOpen ? classes.fullWidth : classes.halfWidth}`}
+          >
+            <SectionButton
+              icon_class={iconClassFlip(isNonTechOpen)}
+              clickFn={toggleSelection}
+              btnAbout="non_tech"
+              btnTitle="Non-technological"
+            />
+          </motion.div>
+        )}
+      </div>
     </>
   );
 };
