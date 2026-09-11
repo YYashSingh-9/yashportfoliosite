@@ -3,7 +3,7 @@
 }
 .parentCard {
   border: 0.1rem solid var(--border-light);
-  height: 50vh;
+  height: 52vh;
   width: 100%;
   max-width: 18rem;
 
@@ -15,7 +15,7 @@
 .innerGrid {
   display: grid;
   padding: 0.5rem 0.5rem;
-  grid-template-rows: 65% 23% 12%;
+  grid-template-rows: 65% 20% 15%;
   grid-template-columns: 100%;
   width: inherit;
 }
@@ -36,16 +36,22 @@
   margin-top: 0.3rem;
   margin: 0.3rem 0.4rem 0rem 0.4rem;
 }
-.innerGrid > :nth-child(3) {
+.buttonBox {
   border-top: 0.1rem solid var(--border-light);
 }
-.innerGrid > :nth-child(3) button {
-  height: 100%;
+.buttonBox button {
+  height: 80%;
   width: 100%;
   border-radius: 0.5rem;
   font-size: 1rem;
   margin: auto;
-  margin-top: 0.25rem;
   text-transform: uppercase;
   font-weight: 500;
+}
+.imageContainer img {
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 0.5rem;
 }

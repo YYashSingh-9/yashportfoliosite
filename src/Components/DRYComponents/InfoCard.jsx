@@ -7,7 +7,7 @@ const InfoCard = (props) => {
       <Grid container className={classes.parentCard}>
         <Grid item xs={12} className={classes.innerGrid}>
           <Box className={classes.imageContainer}>
-            <img />
+            <img src={props.imgSrc} />
           </Box>
           <Box className={classes.titleBox}>
             <h2>{props.cardTitle}</h2>

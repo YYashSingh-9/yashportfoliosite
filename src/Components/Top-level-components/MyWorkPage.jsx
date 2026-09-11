@@ -4,22 +4,10 @@ import AddIcon from "@mui/icons-material/Add";
 import { useState } from "react";
 import InfoCard from "../DRYComponents/InfoCard";
 import { motion } from "framer-motion";
-
-/*    {!isNonTechOpen && (
-          <Grid item className={tech_sectionClasses}>
-            <Box>
-              {" "}
-            
-              <SectionButton
-                icon_class={iconClassFlip(isTechOpen)}
-                clickFn={toggleSelection}
-                title="tech"
-              />
-              <InfoCard />
-            </Box>
-          </Grid>
-        )}
-*/
+import twoFrag from "../../assets/twoFrag.png";
+import ehWater from "../../assets/ehwater.png";
+import mycrdit from "../../assets/myCrdit.png";
+import dummyBG from "../../assets/dummyBG.png";
 
 //Helper component
 const SectionButton = (props) => {
@@ -41,6 +29,39 @@ const SectionButton = (props) => {
     </>
   );
 };
+
+const cardObj = [
+  {
+    name: "MYCRDIT",
+    subtitle: "Local debt management and credit score app.",
+    link: "https://mycrdit.netlify.app",
+    imgsrc: mycrdit,
+  },
+  {
+    name: "EH WATER",
+    subtitle: "Online space to share water problems and solutions.",
+    link: "https://eh-water.netlify.app/",
+    imgsrc: ehWater,
+  },
+  {
+    name: "TWO FRAGRENCE",
+    subtitle: "Full stack working e-com site with JWT Authorization.",
+    link: "https://two-fragrence.netlify.app/",
+    imgsrc: mycrdit,
+  },
+  {
+    name: "UNDER DEV",
+    subtitle: "Project under development, link will be here soon.",
+    link: "#",
+    imgsrc: dummyBG,
+  },
+  {
+    name: "UNDER DEV",
+    subtitle: "Project under development, link will be here soon.",
+    link: "#",
+    imgsrc: dummyBG,
+  },
+];
 
 const MyWorkPage = () => {
   //1. Managing state.
@@ -84,26 +105,14 @@ const MyWorkPage = () => {
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 className={classes.cardsParentContainer}
               >
-                <InfoCard
-                  cardTitle="Project One"
-                  cardDescription="This is project one made in 1998"
-                />
-                <InfoCard
-                  cardTitle="Project One"
-                  cardDescription="This is project one made in 1998"
-                />{" "}
-                <InfoCard
-                  cardTitle="Project One"
-                  cardDescription="This is project one made in 1998"
-                />{" "}
-                <InfoCard
-                  cardTitle="Project One"
-                  cardDescription="This is project one made in 1998"
-                />{" "}
-                <InfoCard
-                  cardTitle="Project One"
-                  cardDescription="This is project one made in 1998"
-                />
+                {cardObj.map((el, i) => (
+                  <InfoCard
+                    cardTitle={el.name}
+                    cardDescription={el.subtitle}
+                    imgSrc={el.imgsrc}
+                    key={String(el.name).charAt(1) + i}
+                  />
+                ))}
               </motion.div>
             )}
           </motion.div>
