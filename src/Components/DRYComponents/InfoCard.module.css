@@ -28,26 +28,31 @@
   text-align: center;
 }
 .innerGrid > :nth-child(2) h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 0.5rem;
 }
 .innerGrid > :nth-child(2) p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-top: 0.3rem;
   margin: 0.3rem 0.4rem 0rem 0.4rem;
 }
 .buttonBox {
   border-top: 0.1rem solid var(--border-light);
 }
-.buttonBox button {
-  height: 80%;
-  width: 100%;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  margin: auto;
-  text-transform: uppercase;
-  font-weight: 500;
+
+.cardButton {
+  letter-spacing: -0.1rem !important;
+  font-size: 1rem !important;
+  color: black !important;
+  height: 80% !important;
+  width: 100% !important;
+  border-radius: 0.5rem !important;
+  margin: auto !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  font-family: "Inter", sans-serif !important;
 }
+
 .imageContainer img {
   height: 100%;
   width: 100%;

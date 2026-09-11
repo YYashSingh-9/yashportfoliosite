@@ -52,13 +52,13 @@ const cardObj = [
   {
     name: "UNDER DEV",
     subtitle: "Project under development, link will be here soon.",
-    link: "#",
+    link: "",
     imgsrc: dummyBG,
   },
   {
     name: "UNDER DEV",
     subtitle: "Project under development, link will be here soon.",
-    link: "#",
+    link: "",
     imgsrc: dummyBG,
   },
 ];
@@ -111,6 +111,7 @@ const MyWorkPage = () => {
                     cardDescription={el.subtitle}
                     imgSrc={el.imgsrc}
                     key={String(el.name).charAt(1) + i}
+                    link={el.link}
                   />
                 ))}
               </motion.div>

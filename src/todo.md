@@ -1,9 +1,9 @@
 Tasks to do:-
 
-1. Create work section click toggle functionality.
-2. Create Cards as DRY component.
-3. Create expanded card component DRY.
-4. Add cards to display work.
+1. Create work section click toggle functionality. ✅
+2. Create Cards as DRY component.✅
+3. Create expanded card div to read component DRY.
+4. Add cards to display work.✅
 5. Add click navigation in nav buttons and home page button.
 6. Add scrolling animation in nav section, about section and services.
 7. Shift all state management to store section.

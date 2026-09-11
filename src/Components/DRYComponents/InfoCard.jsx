@@ -14,7 +14,9 @@ const InfoCard = (props) => {
             <p>{props.cardDescription}</p>
           </Box>
           <Box className={classes.buttonBox}>
-            <Button className={classes.cardButton}>View Project</Button>
+            <Button href={props.link} className={classes.cardButton}>
+              View Project
+            </Button>
           </Box>
         </Grid>
       </Grid>
