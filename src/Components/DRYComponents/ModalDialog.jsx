@@ -8,13 +8,14 @@ import {
   IconButton,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import classes from "./ModalDialog.module.css";
 
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
   return (
     <>
       <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
-        <DialogTitle className={ClassNames}>
+        <DialogTitle className={classes.parentDialogBox}>
           <Typography variant="h6" fontWeight="bold">
             {" "}
             {dialogInfo.cardTitle}
