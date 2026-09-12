@@ -24,7 +24,7 @@ const sliceOne = createSlice({
         name: "TWO FRAGRENCE",
         subtitle: "Full stack working e-com site with JWT Authorization.",
         link: "https://two-fragrence.netlify.app/",
-        imgsrc: mycrdit,
+        imgsrc: twoFrag,
       },
       {
         name: "UNDER DEV",
@@ -45,9 +45,6 @@ const sliceOne = createSlice({
     toggleSelection(state, action) {
       state.activeSelection =
         state.activeSelection === action.payload ? null : action.payload;
-      // setActiveSelection((prevState) =>
-      //   prevState === selection ? null : selection,
-      // );
     },
   },
 });

@@ -6,7 +6,7 @@ Tasks to do:-
 4. Add cards to display work.✅
 5. Add click navigation in nav buttons and home page button.
 6. Add scrolling animation in nav section, about section and services.
-7. Shift all state management to store section.
+7. Shift all state management to store section. ✅
 8. Add what i do section.
 9. Add skills icons in display.
 10. Add click to display full card and remove all options functionality in about section, just give back button.
