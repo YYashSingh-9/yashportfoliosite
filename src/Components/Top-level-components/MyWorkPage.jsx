@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import classes from "./MyWorkPage.module.css";
 import AddIcon from "@mui/icons-material/Add";
 import InfoCard from "../DRYComponents/InfoCard";
+import ModalDialog from "../DRYComponents/ModalDialog";
 
 //Helper component
 const SectionButton = (props) => {
@@ -35,12 +36,20 @@ const MyWorkPage = () => {
   const cardObj_technical = useSelector(
     (state) => state.sliceOne.cardObject_technical,
   );
+  const viewedProject = useSelector((state) => state.sliceOne.viewedProject);
+  const modalState = useSelector((state) => state.sliceOne.modalDialog_open);
+
   const dispatch = useDispatch();
 
   //2. Toggling state.
   const toggleSelection = (selection) => {
     dispatch(sliceActions.toggleSelection(selection));
   };
+
+  const toggle_ModalDialog = (obj) => {
+    dispatch(sliceActions.toggle_ModalDialog(obj));
+  };
+
   //3. Manging helper state.
   const isTechOpen = activeSelection === "tech";
   const isNonTechOpen = activeSelection === "non_tech";
@@ -75,12 +84,18 @@ const MyWorkPage = () => {
                 {cardObj_technical.map((el, i) => (
                   <InfoCard
                     cardTitle={el.name}
-                    cardDescription={el.subtitle}
+                    cardDescription={el.description}
                     imgSrc={el.imgsrc}
                     key={String(el.name).charAt(1) + i}
                     link={el.link}
+                    clickFn={toggle_ModalDialog}
                   />
                 ))}
+                <ModalDialog
+                  open={modalState}
+                  onClose={toggle_ModalDialog}
+                  dialogInfo={viewedProject}
+                />
               </motion.div>
             )}
           </motion.div>

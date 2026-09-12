@@ -10,43 +10,50 @@ const sliceOne = createSlice({
     cardObject_technical: [
       {
         name: "MYCRDIT",
-        subtitle: "Local debt management and credit score app.",
+        description: "Local debt management and credit score app.",
         link: "https://mycrdit.netlify.app",
         imgsrc: mycrdit,
       },
       {
         name: "EH WATER",
-        subtitle: "Online space to share water problems and solutions.",
+        description: "Online space to share water problems and solutions.",
         link: "https://eh-water.netlify.app/",
         imgsrc: ehWater,
       },
       {
         name: "TWO FRAGRENCE",
-        subtitle: "Full stack working e-com site with JWT Authorization.",
+        description: "Full stack working e-com site with JWT Authorization.",
         link: "https://two-fragrence.netlify.app/",
         imgsrc: twoFrag,
       },
       {
         name: "UNDER DEV",
-        subtitle: "Project under development, link will be here soon.",
+        description: "Project under development, link will be here soon.",
         link: "",
         imgsrc: dummyBG,
       },
       {
         name: "UNDER DEV",
-        subtitle: "Project under development, link will be here soon.",
+        description: "Project under development, link will be here soon.",
         link: "",
         imgsrc: dummyBG,
       },
     ],
     activeSelection: null,
+    modalDialog_Open: false,
+    viewedProject: {},
   },
   reducers: {
     toggleSelection(state, action) {
       state.activeSelection =
         state.activeSelection === action.payload ? null : action.payload;
     },
+    toggle_ModalDialog(state, action) {
+      state.modalDialog_Open = !state.modalDialog_Open;
+      state.viewedProject = action.payload;
+    },
   },
 });
+
 export const sliceActions = sliceOne.actions;
 export default sliceOne;
