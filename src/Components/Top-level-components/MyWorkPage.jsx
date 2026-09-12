@@ -1,13 +1,10 @@
-import classes from "./MyWorkPage.module.css";
 import { Box } from "@mui/material";
-import AddIcon from "@mui/icons-material/Add";
-import { useState } from "react";
-import InfoCard from "../DRYComponents/InfoCard";
 import { motion } from "framer-motion";
-import twoFrag from "../../assets/twoFrag.png";
-import ehWater from "../../assets/ehwater.png";
-import mycrdit from "../../assets/myCrdit.png";
-import dummyBG from "../../assets/dummyBG.png";
+import { sliceActions } from "../../Store/sliceOne";
+import { useDispatch, useSelector } from "react-redux";
+import classes from "./MyWorkPage.module.css";
+import AddIcon from "@mui/icons-material/Add";
+import InfoCard from "../DRYComponents/InfoCard";
 
 //Helper component
 const SectionButton = (props) => {
@@ -30,50 +27,20 @@ const SectionButton = (props) => {
   );
 };
 
-const cardObj = [
-  {
-    name: "MYCRDIT",
-    subtitle: "Local debt management and credit score app.",
-    link: "https://mycrdit.netlify.app",
-    imgsrc: mycrdit,
-  },
-  {
-    name: "EH WATER",
-    subtitle: "Online space to share water problems and solutions.",
-    link: "https://eh-water.netlify.app/",
-    imgsrc: ehWater,
-  },
-  {
-    name: "TWO FRAGRENCE",
-    subtitle: "Full stack working e-com site with JWT Authorization.",
-    link: "https://two-fragrence.netlify.app/",
-    imgsrc: mycrdit,
-  },
-  {
-    name: "UNDER DEV",
-    subtitle: "Project under development, link will be here soon.",
-    link: "",
-    imgsrc: dummyBG,
-  },
-  {
-    name: "UNDER DEV",
-    subtitle: "Project under development, link will be here soon.",
-    link: "",
-    imgsrc: dummyBG,
-  },
-];
-
 const MyWorkPage = () => {
   //1. Managing state.
-  const [activeSelection, setActiveSelection] = useState(null);
+  const activeSelection = useSelector(
+    (state) => state.sliceOne.activeSelection,
+  );
+  const cardObj_technical = useSelector(
+    (state) => state.sliceOne.cardObject_technical,
+  );
+  const dispatch = useDispatch();
 
   //2. Toggling state.
   const toggleSelection = (selection) => {
-    setActiveSelection((prevState) =>
-      prevState === selection ? null : selection,
-    );
+    dispatch(sliceActions.toggleSelection(selection));
   };
-
   //3. Manging helper state.
   const isTechOpen = activeSelection === "tech";
   const isNonTechOpen = activeSelection === "non_tech";
@@ -105,7 +72,7 @@ const MyWorkPage = () => {
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 className={classes.cardsParentContainer}
               >
-                {cardObj.map((el, i) => (
+                {cardObj_technical.map((el, i) => (
                   <InfoCard
                     cardTitle={el.name}
                     cardDescription={el.subtitle}
