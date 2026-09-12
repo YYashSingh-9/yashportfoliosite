@@ -37,7 +37,7 @@ const MyWorkPage = () => {
     (state) => state.sliceOne.cardObject_technical,
   );
   const viewedProject = useSelector((state) => state.sliceOne.viewedProject);
-  const modalState = useSelector((state) => state.sliceOne.modalDialog_open);
+  const modalState = useSelector((state) => state.sliceOne.modalDialog_Open);
 
   const dispatch = useDispatch();
 
@@ -47,6 +47,7 @@ const MyWorkPage = () => {
   };
 
   const toggle_ModalDialog = (obj) => {
+    console.log(obj);
     dispatch(sliceActions.toggle_ModalDialog(obj));
   };
 
@@ -58,7 +59,7 @@ const MyWorkPage = () => {
   const iconClassFlip = (isExpanded) => {
     return `${classes.plus_icn} ${isExpanded ? classes.iconflip : ""}`;
   };
-
+  console.log(viewedProject, modalState);
   return (
     <>
       <div className={classes.parentContainer}>

@@ -12,11 +12,12 @@ import classes from "./ModalDialog.module.css";
 
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
+
   return (
     <>
       <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
         <DialogTitle className={classes.parentDialogBox}>
-          <Typography variant="h6" fontWeight="bold">
+          <Typography variant="p" fontWeight="bold">
             {" "}
             {dialogInfo.cardTitle}
           </Typography>
