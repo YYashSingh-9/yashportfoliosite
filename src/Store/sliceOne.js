@@ -3,7 +3,11 @@ import twoFrag from "../assets/twoFrag.png";
 import ehWater from "../assets/ehwater.png";
 import mycrdit from "../assets/myCrdit.png";
 import dummyBG from "../assets/dummyBG.png";
+import eventPoster2 from "../assets/eventPoster2.png";
+import mufasaPoster from "../assets/mufasaPoster.png";
+import graphicPoster from "../assets/graphicPoster.jpg";
 
+// https://www.instagram.com/elmont___/
 const sliceOne = createSlice({
   name: "sliceOne",
   initialState: {

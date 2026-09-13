@@ -13,3 +13,4 @@ Tasks to do:-
 11. Add one button of lets talk which would open up gmail, below that give social icons horizontally lined in black or grey with links.
 12. Add closing footer title.
 13. Fix modal Dialog button synthetic data error.
+14. Add non technical cards.
