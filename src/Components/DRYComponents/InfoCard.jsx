@@ -1,6 +1,6 @@
 import classes from "./InfoCard.module.css";
 import { Grid, Box, Button } from "@mui/material";
-
+import research from "../../assets/researchpdf.pdf";
 const InfoCard = (props) => {
   const currentProjectInfo = {
     cardTitle: props.cardTitle,
