@@ -5,6 +5,7 @@ const InfoCard = (props) => {
   const currentProjectInfo = {
     cardTitle: props.cardTitle,
     cardDescription: props.cardDescription,
+    cardExplanation: props.cardExplanation,
     link: props.link,
     image_src: props.imgSrc,
   };

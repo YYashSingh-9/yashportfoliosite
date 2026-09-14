@@ -86,6 +86,7 @@ const MyWorkPage = () => {
                   <InfoCard
                     cardTitle={el.name}
                     cardDescription={el.description}
+                    cardExplanation={el.explanation}
                     imgSrc={el.imgsrc}
                     key={String(el.name).charAt(1) + i}
                     link={el.link}

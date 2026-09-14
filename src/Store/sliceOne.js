@@ -14,7 +14,7 @@ const sliceOne = createSlice({
       {
         name: "MYCRDIT",
         description: "Local debt management and credit score app.",
-        explaination: `MYCRDIT: Smart Ledger & Behavioral Credit Scoring System for Local Retailers
+        explanation: `MYCRDIT: Smart Ledger & Behavioral Credit Scoring System for Local Retailers
 
 MYCRDIT digitizes traditional cash-debt (udhari) tracking for local proprietors by combining simple ledger management with a data-driven credit risk assessment engine.
 
@@ -36,7 +36,7 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
       {
         name: "EH WATER",
         description: "Online space to share water problems and solutions.",
-        explaination: `"EH WATER is a full-stack community-driven web application designed to bridge the 
+        explanation: `"EH WATER is a full-stack community-driven web application designed to bridge the 
         communication gap between citizens and local authorities regarding water-related challenges. 
         The platform empowers users to post and track localized water problems, while enabling community members 
         and official authorities to provide actionable solutions, share progress updates, and increase transparency in public infrastructure management.
@@ -52,7 +52,7 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
       {
         name: "TWO FRAGRENCE",
         description: "Full stack working e-com site with JWT Authorization.",
-        explaination: `🌸 TWO FRAGRANCE — Full-Stack E-Commerce Platform | TWO FRAGRANCE 
+        explanation: `🌸 TWO FRAGRANCE — Full-Stack E-Commerce Platform | TWO FRAGRANCE 
         is a feature-rich, full-stack fragrance retail web application built on a modern 
         JavaScript stack, pairing a responsive, mobile-first frontend with a production-ready, 
         highly secure Node.js/Express/MongoDB backend RESTful API. | 🛠️ Tech Stack: React.js, 
@@ -74,14 +74,14 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
       {
         name: "UNDER DEV",
         description: "Project under development, link will be here soon.",
-        explaination: "",
+        explanation: "",
         link: "",
         imgsrc: dummyBG,
       },
       {
         name: "UNDER DEV",
         description: "Project under development, link will be here soon.",
-        explaination: "",
+        explanation: "",
         link: "",
         imgsrc: dummyBG,
       },
@@ -91,7 +91,7 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
         name: "Consumer demand research",
         description:
           "A Longitudinal Behavioral Framework Mapping Environmental Influences, Mass Emotional Fatigue, and Future Demand Shifts.",
-        explaination: `RESEARCH & STRATEGIC BEHAVIORAL ANALYSIS
+        explanation: `RESEARCH & STRATEGIC BEHAVIORAL ANALYSIS
 Macro Consumer Psychology & Mass Content Consumption Dynamics
 A Longitudinal Behavioral Framework Mapping Environmental Influences, Mass Emotional Fatigue, and Future Demand Shifts
 (2020-2026)
@@ -223,7 +223,7 @@ STRATEGIC MARKET OPPORTUNITY:
       {
         name: "Submarine music festival",
         description: "City's first open air music festival.",
-        explaination: `Submarine Music Festival — Lead Organizer
+        explanation: `Submarine Music Festival — Lead Organizer
 
 The City’s First Open-Air Music Festival
 
@@ -241,7 +241,7 @@ Brand & Audience Engagement: Drove localized promotional campaigns, sponsorship 
         name: "Mufasa cloud kitchen",
         description:
           "City's first cloud kitchen base food home delivery startup.",
-        explaination: `Mufasa Cloud Kitchen — Founder & Operator
+        explanation: `Mufasa Cloud Kitchen — Founder & Operator
 
 City’s First Cloud Kitchen Food Delivery Startup
 
@@ -258,7 +258,7 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
       {
         name: "Elmont graphics",
         description: "Freelance graphic designing work.",
-        explaination:
+        explanation:
           "Freelancing work and social media page posting all the designs. Designs were made using mix of Photoshop, illustrator and canva.",
         link: "https://www.instagram.com/elmont___/",
         imgsrc: graphicPoster,
@@ -266,7 +266,7 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
       {
         name: "UNDER DEV",
         description: "Project under development, link will be here soon.",
-        explaination: "",
+        explanation: "",
         link: "",
         imgsrc: dummyBG,
       },

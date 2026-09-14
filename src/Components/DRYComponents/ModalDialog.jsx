@@ -21,12 +21,13 @@ const ModalDialog = (props) => {
             {" "}
             {dialogInfo.cardTitle}
           </Typography>
+          <Typography paragraph>{dialogInfo.cardDescription} </Typography>
           <IconButton onClick={onClose} size="small">
             <CloseIcon />
           </IconButton>
         </DialogTitle>
         <DialogContent dividers>
-          <Typography paragraph>{dialogInfo.cardDescription} </Typography>
+          <Typography paragraph>{dialogInfo.cardExplanation} </Typography>
         </DialogContent>
         <DialogActions>
           <Button onClick={onClose} color="inherit">
