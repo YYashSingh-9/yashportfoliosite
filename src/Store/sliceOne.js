@@ -14,21 +14,60 @@ const sliceOne = createSlice({
       {
         name: "MYCRDIT",
         description: "Local debt management and credit score app.",
-        explaination: "",
+        explaination: `MYCRDIT: Smart Ledger & Behavioral Credit Scoring System for Local Retailers
+
+MYCRDIT digitizes traditional cash-debt (udhari) tracking for local proprietors by combining simple ledger management with a data-driven credit risk assessment engine.
+
+Tech Stack:
+• Frontend: React.js, Redux Toolkit, Material-UI (MUI), deployed on Netlify.
+• Backend: Node.js, Express.js (REST API), MongoDB, Mongoose, deployed on Render.
+• Security: JWT authentication via secure HTTP-only cookies, robust CRUD authorization, input validation, and exploitation prevention.
+
+Key Features:
+• Auth & Profile: Secure Sign-up, Login, Logout, and full Profile CRUD (including password updates).
+• Algorithmic Credit Engine: Dynamically tracks repayment timeframes, frequency, and monetary scale to calculate real-time consumer credit scores, aiding risk evaluation.
+• UI/UX: Low-friction, responsive MUI design optimized for fast entry creation and daily retailer use.
+
+Key Tech Stack 
+React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algorithmic Logic • REST API`,
         link: "https://mycrdit.netlify.app",
         imgsrc: mycrdit,
       },
       {
         name: "EH WATER",
         description: "Online space to share water problems and solutions.",
-        explaination: "",
+        explaination: `"EH WATER is a full-stack community-driven web application designed to bridge the 
+        communication gap between citizens and local authorities regarding water-related challenges. 
+        The platform empowers users to post and track localized water problems, while enabling community members 
+        and official authorities to provide actionable solutions, share progress updates, and increase transparency in public infrastructure management.
+        \n\nKey Features:\n- Issue Reporting & Discussion: Citizens can publish detailed reports on water shortages, contamination, or infrastructure damage, allowing peer-to-peer and 
+        community-level discussion.\n- Authority Engagement & Status Tracking: Enables local authorities to jump into existing threads, 
+        claim issue resolution, and provide real-time status updates (e.g., Under Review, Work In Progress, Resolved).\n- 
+        Secure Authentication: Implemented role-based authorization using JSON Web Tokens (JWT) to secure user sessions and verify genuine postings and official authority responses.\n- 
+        Responsive & Intuitive UI: Built with Material UI (MUI) components to ensure an accessible, clean, and mobile-friendly interface for seamless user interaction across devices.\n\n
+        Tech Stack & Architecture:\n- Frontend: React, Material UI (MUI)\n- Backend: Node.js, Express.js\n- Database: MongoDB, Mongoose\n- Authentication: JSON Web Tokens (JWT), Bcrypt"`,
         link: "https://eh-water.netlify.app/",
         imgsrc: ehWater,
       },
       {
         name: "TWO FRAGRENCE",
         description: "Full stack working e-com site with JWT Authorization.",
-        explaination: "",
+        explaination: `🌸 TWO FRAGRANCE — Full-Stack E-Commerce Platform | TWO FRAGRANCE 
+        is a feature-rich, full-stack fragrance retail web application built on a modern 
+        JavaScript stack, pairing a responsive, mobile-first frontend with a production-ready, 
+        highly secure Node.js/Express/MongoDB backend RESTful API. | 🛠️ Tech Stack: React.js, 
+        Redux / Context API, React Router, Tailwind CSS | Node.js, Express.js | MongoDB, Mongoose |
+        JWT, HTTP-Only Cookies, Bcrypt.js, Helmet, XSS-Clean, Express Mongo Sanitize, Rate Limiter, CORS |
+        Compression, Dotenv. | ✨ Key Features — Front-End: Interactive toggle dropdowns &
+        dynamic routing (/product/:id, Navbar, Best Sellers, Blog, Product Info, User Dashboard, My Orders, Cart, Wishlist); 
+        multi-faceted search, price range slider, category filters, pagination, and "Show More" loader; dynamic product page 
+        UI (cart/wishlist state toggles, pincode delivery checker, custom toast notifications, loading fallbacks); 
+        real-time cart & wishlist management (auto quantity/price recalculations, dynamic cart badge, wishlist-to-cart cross-feature sync, auto-clearing upon order placement);
+        protected frontend routes, responsive auth modals, and account profile/password editor. | 🗜️ Back-End REST API Architecture: Mongoose schemas for products, users, cart, 
+        and orders with automated catalog seeding scripts; full CRUD REST endpoints for catalog browsing, wishlist/cart manipulation, and atomic multi-item order placement linked 
+        to user IDs; end-to-end auth flow (Register, Login, Logout, Verification) powered by Bcrypt.js hashing & secure HTTP-Only JWT cookies; production-grade API hardening featuring XSS protection, 
+        NoSQL injection defense, rate limiting, gzip compression, CORS configuration, and centralized error handling (fully tested via Postman). | 
+        📌 Status: Front-End & Back-End Complete; Upcoming: Native Payment Gateway Integration (Stripe/Razorpay) & Lazy-Loading Optimizations.`,
         link: "https://two-fragrence.netlify.app/",
         imgsrc: twoFrag,
       },
