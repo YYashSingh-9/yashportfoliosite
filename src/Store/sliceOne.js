@@ -32,6 +32,7 @@ Key Tech Stack
 React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algorithmic Logic • REST API`,
         link: "https://mycrdit.netlify.app",
         imgsrc: mycrdit,
+        text_Heading: `MYCRDIT: Smart Ledger & Behavioral Credit Scoring System for Local Retailers`,
       },
       {
         name: "EH WATER",
