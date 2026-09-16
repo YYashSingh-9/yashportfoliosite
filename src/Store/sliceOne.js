@@ -256,19 +256,15 @@ Brand & Audience Engagement: Drove localized promotional campaigns, sponsorship 
         name: "Mufasa cloud kitchen",
         description:
           "City's first cloud kitchen base food home delivery startup.",
-        explanation: `Mufasa Cloud Kitchen — Founder & Operator
-
-City’s First Cloud Kitchen Food Delivery Startup
-
-Pioneered the city’s first cloud kitchen model, establishing a direct-to-consumer home delivery startup specializing in fast-food chicken. Built and scaled an agile operational system from scratch, leveraging lean digital communication channels to drive local orders.
-
-Direct-to-Consumer Logistics: Handled end-to-end supply chain, food prep consistency, packaging, and last-mile delivery operations to ensure fast order fulfillment.
+        link: "https://www.facebook.com/photo.php?fbid=318544978724564&set=pb.100017071938090.-2207520000&type=3",
+        imgsrc: mufasaPoster,
+        content_Heading: `Mufasa Cloud Kitchen — Founder & Operator`,
+        content_subheading: `Pioneered the city’s first cloud kitchen model, establishing a direct-to-consumer home delivery startup specializing in fast-food chicken. `,
+        content_main_text: ` Built and scaled an agile operational system from scratch, leveraging lean digital communication channels to drive local orders. Direct-to-Consumer Logistics: Handled end-to-end supply chain, food prep consistency, packaging, and last-mile delivery operations to ensure fast order fulfillment.
 
 Lean Digital Ordering System: Designed a friction-free ordering workflow using WhatsApp and direct phone calls, bypassing heavy third-party platform fees while maintaining a direct customer relationship.
 
 Brand Strategy & Customer Retention: Developed brand identity, localized promotional offers, and a loyal customer base around quick-service chicken fast food.`,
-        link: "https://www.facebook.com/photo.php?fbid=318544978724564&set=pb.100017071938090.-2207520000&type=3",
-        imgsrc: mufasaPoster,
       },
       {
         name: "Elmont graphics",
@@ -277,6 +273,9 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
           "Freelancing work and social media page posting all the designs. Designs were made using mix of Photoshop, illustrator and canva.",
         link: "https://www.instagram.com/elmont___/",
         imgsrc: graphicPoster,
+        content_Heading: `Freelance graphic designing work`,
+        content_subheading: `Freelancing work and social media page posting all the designs.`,
+        content_main_text: `Designs were made using mix of Photoshop, illustrator and canva."`,
       },
       {
         name: "UNDER DEV",
