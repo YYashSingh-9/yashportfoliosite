@@ -12,10 +12,16 @@ import classes from "./ModalDialog.module.css";
 
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
-
+  console.log(dialogInfo);
   return (
     <>
-      <Dialog open={open} onClose={onClose} maxWidth="md" fullWidth>
+      <Dialog
+        open={open}
+        onClose={onClose}
+        maxWidth="md"
+        fullWidth
+        className={classes.modalBg}
+      >
         <DialogTitle className={classes.parentDialogBox}>
           <Typography variant="p" fontWeight="bold">
             {" "}

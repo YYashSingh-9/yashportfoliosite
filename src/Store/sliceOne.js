@@ -50,22 +50,6 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
       {
         name: "TWO FRAGRENCE",
         description: "Full stack working e-com site with JWT Authorization.",
-        explanation: `🌸 TWO FRAGRANCE — Full-Stack E-Commerce Platform | TWO FRAGRANCE 
-        is a feature-rich, full-stack fragrance retail web application built on a modern 
-        JavaScript stack, pairing a responsive, mobile-first frontend with a production-ready, 
-        highly secure Node.js/Express/MongoDB backend RESTful API. | 🛠️ Tech Stack: React.js, 
-        Redux / Context API, React Router, Tailwind CSS | Node.js, Express.js | MongoDB, Mongoose |
-        JWT, HTTP-Only Cookies, Bcrypt.js, Helmet, XSS-Clean, Express Mongo Sanitize, Rate Limiter, CORS |
-        Compression, Dotenv. | ✨ Key Features — Front-End: Interactive toggle dropdowns &
-        dynamic routing (/product/:id, Navbar, Best Sellers, Blog, Product Info, User Dashboard, My Orders, Cart, Wishlist); 
-        multi-faceted search, price range slider, category filters, pagination, and "Show More" loader; dynamic product page 
-        UI (cart/wishlist state toggles, pincode delivery checker, custom toast notifications, loading fallbacks); 
-        real-time cart & wishlist management (auto quantity/price recalculations, dynamic cart badge, wishlist-to-cart cross-feature sync, auto-clearing upon order placement);
-        protected frontend routes, responsive auth modals, and account profile/password editor. | 🗜️ Back-End REST API Architecture: Mongoose schemas for products, users, cart, 
-        and orders with automated catalog seeding scripts; full CRUD REST endpoints for catalog browsing, wishlist/cart manipulation, and atomic multi-item order placement linked 
-        to user IDs; end-to-end auth flow (Register, Login, Logout, Verification) powered by Bcrypt.js hashing & secure HTTP-Only JWT cookies; production-grade API hardening featuring XSS protection, 
-        NoSQL injection defense, rate limiting, gzip compression, CORS configuration, and centralized error handling (fully tested via Postman). | 
-        📌 Status: Front-End & Back-End Complete; Upcoming: Native Payment Gateway Integration (Stripe/Razorpay) & Lazy-Loading Optimizations.`,
         link: "https://two-fragrence.netlify.app/",
         imgsrc: twoFrag,
         content_Heading: `TWO FRAGRANCE — Full-Stack E-Commerce Platform `,

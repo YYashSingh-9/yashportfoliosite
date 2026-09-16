@@ -1,0 +1,6 @@
+.parentDialogBox {
+  border-radius: 2rem !important ;
+}
+.modalBg {
+  backdrop-filter: blur(8px);
+}
