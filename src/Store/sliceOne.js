@@ -14,11 +14,11 @@ const sliceOne = createSlice({
       {
         name: "MYCRDIT",
         description: "Local debt management and credit score app.",
-        explanation: `MYCRDIT: Smart Ledger & Behavioral Credit Scoring System for Local Retailers
-
-MYCRDIT digitizes traditional cash-debt (udhari) tracking for local proprietors by combining simple ledger management with a data-driven credit risk assessment engine.
-
-Tech Stack:
+        link: "https://mycrdit.netlify.app",
+        imgsrc: mycrdit,
+        content_Heading: `MYCRDIT: Smart Ledger & Behavioral Credit Scoring System for Local Retailers`,
+        content_subheading: `MYCRDIT digitizes traditional cash-debt (udhari) tracking for local proprietors by combining simple ledger management with a data-driven credit risk assessment engine.`,
+        content_main_text: `Tech Stack:
 • Frontend: React.js, Redux Toolkit, Material-UI (MUI), deployed on Netlify.
 • Backend: Node.js, Express.js (REST API), MongoDB, Mongoose, deployed on Render.
 • Security: JWT authentication via secure HTTP-only cookies, robust CRUD authorization, input validation, and exploitation prevention.
@@ -30,25 +30,22 @@ Key Features:
 
 Key Tech Stack 
 React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algorithmic Logic • REST API`,
-        link: "https://mycrdit.netlify.app",
-        imgsrc: mycrdit,
-        text_Heading: `MYCRDIT: Smart Ledger & Behavioral Credit Scoring System for Local Retailers`,
       },
       {
         name: "EH WATER",
         description: "Online space to share water problems and solutions.",
-        explanation: `"EH WATER is a full-stack community-driven web application designed to bridge the 
-        communication gap between citizens and local authorities regarding water-related challenges. 
-        The platform empowers users to post and track localized water problems, while enabling community members 
-        and official authorities to provide actionable solutions, share progress updates, and increase transparency in public infrastructure management.
-        \n\nKey Features:\n- Issue Reporting & Discussion: Citizens can publish detailed reports on water shortages, contamination, or infrastructure damage, allowing peer-to-peer and 
+        link: "https://eh-water.netlify.app/",
+        imgsrc: ehWater,
+        content_Heading: `EH WATER is a full-stack community-driven web application designed to bridge the 
+        communication gap between citizens and local authorities regarding water-related challenges`,
+        content_subheading: `        The platform empowers users to post and track localized water problems, while enabling community members 
+        and official authorities to provide actionable solutions, share progress updates, and increase transparency in public infrastructure management.`,
+        content_main_text: `\n\nKey Features:\n- Issue Reporting & Discussion: Citizens can publish detailed reports on water shortages, contamination, or infrastructure damage, allowing peer-to-peer and 
         community-level discussion.\n- Authority Engagement & Status Tracking: Enables local authorities to jump into existing threads, 
         claim issue resolution, and provide real-time status updates (e.g., Under Review, Work In Progress, Resolved).\n- 
         Secure Authentication: Implemented role-based authorization using JSON Web Tokens (JWT) to secure user sessions and verify genuine postings and official authority responses.\n- 
         Responsive & Intuitive UI: Built with Material UI (MUI) components to ensure an accessible, clean, and mobile-friendly interface for seamless user interaction across devices.\n\n
-        Tech Stack & Architecture:\n- Frontend: React, Material UI (MUI)\n- Backend: Node.js, Express.js\n- Database: MongoDB, Mongoose\n- Authentication: JSON Web Tokens (JWT), Bcrypt"`,
-        link: "https://eh-water.netlify.app/",
-        imgsrc: ehWater,
+        Tech Stack & Architecture:\n- Frontend: React, Material UI (MUI)\n- Backend: Node.js, Express.js\n- Database: MongoDB, Mongoose\n- Authentication: JSON Web Tokens (JWT), Bcrypt`,
       },
       {
         name: "TWO FRAGRENCE",
@@ -71,6 +68,24 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
         📌 Status: Front-End & Back-End Complete; Upcoming: Native Payment Gateway Integration (Stripe/Razorpay) & Lazy-Loading Optimizations.`,
         link: "https://two-fragrence.netlify.app/",
         imgsrc: twoFrag,
+        content_Heading: `TWO FRAGRANCE — Full-Stack E-Commerce Platform `,
+        content_subheading: `TWO FRAGRANCE 
+        is a feature-rich, full-stack fragrance retail web application built on a modern 
+        JavaScript stack, pairing a responsive, mobile-first frontend with a production-ready, 
+        highly secure Node.js/Express/MongoDB backend RESTful API.`,
+        content_main_text: `Tech Stack: React.js, 
+        Redux / Context API, React Router, Tailwind CSS | Node.js, Express.js | MongoDB, Mongoose |
+        JWT, HTTP-Only Cookies, Bcrypt.js, Helmet, XSS-Clean, Express Mongo Sanitize, Rate Limiter, CORS |
+        Compression, Dotenv. | ✨ Key Features — Front-End: Interactive toggle dropdowns &
+        dynamic routing (/product/:id, Navbar, Best Sellers, Blog, Product Info, User Dashboard, My Orders, Cart, Wishlist); 
+        multi-faceted search, price range slider, category filters, pagination, and "Show More" loader; dynamic product page 
+        UI (cart/wishlist state toggles, pincode delivery checker, custom toast notifications, loading fallbacks); 
+        real-time cart & wishlist management (auto quantity/price recalculations, dynamic cart badge, wishlist-to-cart cross-feature sync, auto-clearing upon order placement);
+        protected frontend routes, responsive auth modals, and account profile/password editor. | 🗜️ Back-End REST API Architecture: Mongoose schemas for products, users, cart, 
+        and orders with automated catalog seeding scripts; full CRUD REST endpoints for catalog browsing, wishlist/cart manipulation, and atomic multi-item order placement linked 
+        to user IDs; end-to-end auth flow (Register, Login, Logout, Verification) powered by Bcrypt.js hashing & secure HTTP-Only JWT cookies; production-grade API hardening featuring XSS protection, 
+        NoSQL injection defense, rate limiting, gzip compression, CORS configuration, and centralized error handling (fully tested via Postman). | 
+        📌 Status: Front-End & Back-End Complete; Upcoming: Native Payment Gateway Integration (Stripe/Razorpay) & Lazy-Loading Optimizations.`,
       },
       {
         name: "UNDER DEV",
@@ -92,14 +107,15 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
         name: "Consumer demand research",
         description:
           "A Longitudinal Behavioral Framework Mapping Environmental Influences, Mass Emotional Fatigue, and Future Demand Shifts.",
-        explanation: `RESEARCH & STRATEGIC BEHAVIORAL ANALYSIS
-Macro Consumer Psychology & Mass Content Consumption Dynamics
-A Longitudinal Behavioral Framework Mapping Environmental Influences, Mass Emotional Fatigue, and Future Demand Shifts
+        link: "https://mycrdit.netlify.app",
+        imgsrc: researchPoster,
+        content_Heading: `RESEARCH & STRATEGIC BEHAVIORAL ANALYSIS
+Macro Consumer Psychology & Mass Content Consumption Dynamics`,
+        content_subheading: `A Longitudinal Behavioral Framework Mapping Environmental Influences, Mass Emotional Fatigue, and Future Demand Shifts
 (2020-2026)
 Author: Yashwardhan Singh
-Published: Portfolio Strategy & Research Series
-
-EXECUTIVE SUMMARY OVERVIEW
+Published: Portfolio Strategy & Research Series`,
+        content_main_text: `EXECUTIVE SUMMARY OVERVIEW
 This study presents a structural psychological framework designed to analyze mass content consumption behaviors, public emotional trajectories, and upcoming socio-economic demands. By combining multi-layered content supply matrices with longitudinal tracking of macro-environmental events (2020 through 2026), this research maps the collective cognitive shift from over-stimulated, high-dopamine consumption toward severe emotional fatigue, desensitization, and an ultimate demand for authenticity, clutter-free depth, and low-friction real-world utility.
 
 1. Content Supply & Consumption Dynamics Matrix (Layer 1)
@@ -218,8 +234,6 @@ PSYCHOLOGICAL CONTEXT & EXPLANATION: Mass frustration, isolation, and institutio
 STRATEGIC MARKET OPPORTUNITY:
 • Position brands, platform founders, or public figures as straightforward, high-integrity leaders operating "for the people, of the people, and by the people."
 • Focus on delivering concrete relief, practical clarity, and emotional security.`,
-        link: "https://mycrdit.netlify.app",
-        imgsrc: researchPoster,
       },
       {
         name: "Submarine music festival",
