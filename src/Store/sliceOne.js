@@ -281,6 +281,7 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
     toggle_ModalDialog(state, action) {
       state.modalDialog_Open = !state.modalDialog_Open;
       state.viewedProject = action.payload;
+      console.log(state.viewedProject, action.payload);
     },
   },
 });
