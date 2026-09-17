@@ -12,7 +12,7 @@ import classes from "./ModalDialog.module.css";
 
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
-  console.log(dialogInfo);
+
   return (
     <>
       <Dialog
