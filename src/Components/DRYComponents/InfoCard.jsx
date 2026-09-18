@@ -4,7 +4,7 @@ import research from "../../assets/researchpdf.pdf";
 const InfoCard = (props) => {
   const currentProjectInfo = {
     cardTitle: props.cardTitle,
-    cardDescription: props.cardDescription,
+    cardHeading: props.cardHeading,
     cardExplanation: props.cardExplanation,
     link: props.link,
     image_src: props.imgSrc,
