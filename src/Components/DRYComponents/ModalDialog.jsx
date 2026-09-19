@@ -25,15 +25,12 @@ const ModalDialog = (props) => {
         <DialogTitle className={classes.parentDialogBox}>
           <Typography variant="p" fontWeight="bold">
             {" "}
-            {dialogInfo.cardTitle}
-          </Typography>
-          <Typography variant="p" fontWeight="bold">
-            {" "}
             {dialogInfo.cardHeading}
           </Typography>
+          <br />
           <Typography variant="p" fontWeight="bold">
             {" "}
-            {dialogInfo.card_subheading}
+            {dialogInfo.cardSubHeading}
           </Typography>
           {/* <Typography paragraph>{dialogInfo.cardDescription} </Typography> */}
           <IconButton onClick={onClose} size="small">
@@ -41,7 +38,7 @@ const ModalDialog = (props) => {
           </IconButton>
         </DialogTitle>
         <DialogContent dividers>
-          <Typography paragraph>{dialogInfo.cardMaintText} </Typography>
+          <Typography paragraph>{dialogInfo.cardMainText} </Typography>
         </DialogContent>
         <DialogActions>
           <Button onClick={onClose} color="inherit">

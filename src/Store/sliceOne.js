@@ -36,8 +36,7 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
         description: "Online space to share water problems and solutions.",
         link: "https://eh-water.netlify.app/",
         imgsrc: ehWater,
-        content_Heading: `EH WATER is a full-stack community-driven web application designed to bridge the 
-        communication gap between citizens and local authorities regarding water-related challenges`,
+        content_Heading: `EH WATER is a full-stack  web application  regarding water-related challenges`,
         content_subheading: `        The platform empowers users to post and track localized water problems, while enabling community members 
         and official authorities to provide actionable solutions, share progress updates, and increase transparency in public infrastructure management.`,
         content_main_text: `\n\nKey Features:\n- Issue Reporting & Discussion: Citizens can publish detailed reports on water shortages, contamination, or infrastructure damage, allowing peer-to-peer and 
@@ -73,15 +72,17 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
       },
       {
         name: "UNDER DEV",
-        description: "Project under development, link will be here soon.",
-        explanation: "",
+        content_Heading: `Project under development in cooking process, will soon be uploaded here`,
+        content_subheading: `This project is in cooking process, will soon be uploaded here`,
+        content_main_text: ``,
         link: "",
         imgsrc: dummyBG,
       },
       {
         name: "UNDER DEV",
-        description: "Project under development, link will be here soon.",
-        explanation: "",
+        content_Heading: `Project under development in cooking process, will soon be uploaded here`,
+        content_subheading: `This project is in cooking process, will soon be uploaded here`,
+        content_main_text: ``,
         link: "",
         imgsrc: dummyBG,
       },

@@ -5,7 +5,8 @@ const InfoCard = (props) => {
   const currentProjectInfo = {
     cardTitle: props.cardTitle,
     cardHeading: props.cardHeading,
-    cardExplanation: props.cardExplanation,
+    cardSubHeading: props.cardSubHeading,
+    cardMainText: props.cardMainText,
     link: props.link,
     image_src: props.imgSrc,
   };
@@ -22,7 +23,7 @@ const InfoCard = (props) => {
           </Box>
           <Box className={classes.titleBox}>
             <h2>{props.cardTitle}</h2>
-            <p>{props.cardDescription}</p>
+            <p>{props.cardHeading}</p>
           </Box>
           <Box className={classes.buttonBox}>
             <Button className={classes.cardButton} onClick={openModal_Fn}>
