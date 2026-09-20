@@ -23,7 +23,11 @@ const ModalDialog = (props) => {
         className={classes.modalBg}
       >
         <DialogTitle className={classes.parentDialogBox}>
-          <Typography variant="p" fontWeight="bold">
+          <Typography
+            variant="p"
+            fontWeight="bold"
+            className={classes.headingText}
+          >
             {" "}
             {dialogInfo.cardHeading}
           </Typography>
