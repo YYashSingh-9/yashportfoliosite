@@ -6,7 +6,7 @@ import NavBar from "../Additional-helper-components/NavBar";
 const NavigationSection = () => {
   return (
     <>
-      <BasicCoverDiv direction="row">
+      <BasicCoverDiv direction="row" className={classes.coverDiv}>
         <Grid item className={classes.leftPart}>
           <Box>
             <p style={{ background: "transparent", backdropFilter: blur(2) }}>
