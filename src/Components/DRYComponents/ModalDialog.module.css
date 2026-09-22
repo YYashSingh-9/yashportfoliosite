@@ -2,7 +2,33 @@
   border-radius: 2rem !important ;
 }
 .modalBg {
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(5px) !important;
 }
+
 .headingText {
+  font-family: "Inter", "sans-serif";
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: block;
+  text-align: center;
+}
+.headingParentBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-subtitle);
+}
+.subHeadingText {
+  display: block;
+  font-family: "Inter", "sans-serif";
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: rgb(244, 244, 244);
+  padding: 0.5rem;
+  border: 0.1rem solid rgb(190, 190, 190);
+  border-radius: 0.5rem;
+}
+.headIcon {
+  color: var(--text-subtitle);
+  transform: scale(1.1);
 }

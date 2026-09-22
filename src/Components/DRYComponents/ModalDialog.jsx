@@ -6,10 +6,11 @@ import {
   Button,
   Typography,
   IconButton,
+  Box,
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import classes from "./ModalDialog.module.css";
-
+import ViewInArIcon from "@mui/icons-material/ViewInAr";
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
   console.log(dialogInfo);
@@ -23,23 +24,29 @@ const ModalDialog = (props) => {
         className={classes.modalBg}
       >
         <DialogTitle className={classes.parentDialogBox}>
+          <Box className={classes.headingParentBox}>
+            <IconButton className={classes.headIcon}>
+              <ViewInArIcon className={classes.headIcon} />
+            </IconButton>
+            <Typography
+              variant="p"
+              fontWeight="bold"
+              className={classes.headingText}
+            >
+              {" "}
+              {dialogInfo.cardHeading}
+            </Typography>
+          </Box>
+
+          <br />
           <Typography
             variant="p"
             fontWeight="bold"
-            className={classes.headingText}
+            className={classes.subHeadingText}
           >
-            {" "}
-            {dialogInfo.cardHeading}
-          </Typography>
-          <br />
-          <Typography variant="p" fontWeight="bold">
             {" "}
             {dialogInfo.cardSubHeading}
           </Typography>
-          {/* <Typography paragraph>{dialogInfo.cardDescription} </Typography> */}
-          <IconButton onClick={onClose} size="small">
-            <CloseIcon />
-          </IconButton>
         </DialogTitle>
         <DialogContent dividers>
           <Typography paragraph>{dialogInfo.cardMainText} </Typography>
