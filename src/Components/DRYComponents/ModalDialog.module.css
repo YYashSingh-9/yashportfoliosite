@@ -49,4 +49,6 @@
   color: rgb(240, 52, 52) !important;
 }
 .cardActionSection {
+  display: flex !important;
+  justify-content: center !important;
 }

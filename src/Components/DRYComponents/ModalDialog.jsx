@@ -62,6 +62,14 @@ const ModalDialog = (props) => {
             {" "}
             Close
           </Button>
+          <Button
+            onClick={onClose}
+            color="inherit"
+            className={classes.closeBtn}
+          >
+            {" "}
+            Close
+          </Button>
         </DialogActions>
       </Dialog>
     </>
