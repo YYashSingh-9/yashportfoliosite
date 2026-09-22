@@ -49,10 +49,16 @@ const ModalDialog = (props) => {
           </Typography>
         </DialogTitle>
         <DialogContent dividers>
-          <Typography paragraph>{dialogInfo.cardMainText} </Typography>
+          <Typography paragraph className={classes.cardParagraph}>
+            {dialogInfo.cardMainText}{" "}
+          </Typography>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={onClose} color="inherit">
+        <DialogActions className={classes.cardActionSection}>
+          <Button
+            onClick={onClose}
+            color="inherit"
+            className={classes.closeBtn}
+          >
             {" "}
             Close
           </Button>

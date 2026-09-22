@@ -32,3 +32,21 @@
   color: var(--text-subtitle);
   transform: scale(1.1);
 }
+.cardParagraph {
+  border: 0.1rem solid rgb(211 211 211);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif !important;
+  text-align: center;
+}
+.closeBtn {
+  font-family: "Inter", sans-serif !important;
+  font-size: 0.8rem !important;
+  font-weight: 700 !important;
+  padding: 0.4rem 1.5rem !important;
+  border-radius: 2rem !important;
+  border: 0.11rem solid rgb(240, 52, 52) !important;
+  color: rgb(240, 52, 52) !important;
+}
+.cardActionSection {
+}
