@@ -49,6 +49,11 @@ const ModalDialog = (props) => {
           </Typography>
         </DialogTitle>
         <DialogContent dividers>
+          <Box>
+            <img src={dialogInfo.image_src} />
+          </Box>
+        </DialogContent>
+        <DialogContent dividers>
           <Typography paragraph className={classes.cardParagraph}>
             {dialogInfo.cardMainText}{" "}
           </Typography>
