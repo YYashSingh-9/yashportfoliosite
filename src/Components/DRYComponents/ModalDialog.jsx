@@ -48,12 +48,8 @@ const ModalDialog = (props) => {
             {dialogInfo.cardSubHeading}
           </Typography>
         </DialogTitle>
-        <DialogContent dividers>
-          <Box>
-            <img src={dialogInfo.image_src} />
-          </Box>
-        </DialogContent>
-        <DialogContent dividers>
+
+        <DialogContent>
           <Typography paragraph className={classes.cardParagraph}>
             {dialogInfo.cardMainText}{" "}
           </Typography>
@@ -62,10 +58,10 @@ const ModalDialog = (props) => {
           <Button
             onClick={onClose}
             color="inherit"
-            className={classes.closeBtn}
+            className={classes.openLinkBtn}
           >
             {" "}
-            Close
+            Open project
           </Button>
           <Button
             onClick={onClose}
