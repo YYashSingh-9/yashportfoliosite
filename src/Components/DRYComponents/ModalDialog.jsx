@@ -13,7 +13,6 @@ import classes from "./ModalDialog.module.css";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
-  console.log(dialogInfo);
   return (
     <>
       <Dialog
@@ -56,6 +55,7 @@ const ModalDialog = (props) => {
         </DialogContent>
         <DialogActions className={classes.cardActionSection}>
           <Button
+            href={dialogInfo.link}
             onClick={onClose}
             color="inherit"
             className={classes.openLinkBtn}
