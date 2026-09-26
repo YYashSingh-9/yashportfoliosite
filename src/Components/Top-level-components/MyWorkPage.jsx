@@ -73,7 +73,7 @@ const MyWorkPage = () => {
               icon_class={iconClassFlip(isTechOpen)}
               clickFn={toggleSelection}
               btnAbout="tech"
-              btnTitle="Technological"
+              btnTitle="Technical"
             />
 
             {isTechOpen && (
@@ -117,7 +117,7 @@ const MyWorkPage = () => {
               icon_class={iconClassFlip(isNonTechOpen)}
               clickFn={toggleSelection}
               btnAbout="non_tech"
-              btnTitle="Non-technological"
+              btnTitle="Non-technical"
             />
           </motion.div>
         )}
