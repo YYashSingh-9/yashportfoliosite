@@ -36,6 +36,9 @@ const MyWorkPage = () => {
   const cardObj_technical = useSelector(
     (state) => state.sliceOne.cardObject_technical,
   );
+  const cardObject_NonTechnical = useSelector(
+    (state) => state.sliceOne.cardObject_NonTechnical,
+  );
   const viewedProject = useSelector((state) => state.sliceOne.viewedProject);
   const modalState = useSelector((state) => state.sliceOne.modalDialog_Open);
 
@@ -119,6 +122,32 @@ const MyWorkPage = () => {
               btnAbout="non_tech"
               btnTitle="Non-technical"
             />
+            {isNonTechOpen && (
+              <motion.div
+                layout
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                className={classes.cardsParentContainer}
+              >
+                {cardObject_NonTechnical.map((el, i) => (
+                  <InfoCard
+                    cardTitle={el.name}
+                    cardDescription={el.description}
+                    cardHeading={el.content_Heading}
+                    cardSubHeading={el.content_subheading}
+                    cardMainText={el.content_main_text}
+                    imgSrc={el.imgsrc}
+                    key={String(el.name).charAt(1) + i}
+                    link={el.link}
+                    clickFn={toggle_ModalDialog}
+                  />
+                ))}
+                <ModalDialog
+                  open={modalState}
+                  onClose={toggle_ModalDialog}
+                  dialogInfo={viewedProject}
+                />
+              </motion.div>
+            )}
           </motion.div>
         )}
       </div>
