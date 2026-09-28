@@ -94,8 +94,7 @@ React • Node.js • Express • MongoDB • Material-UI (MUI) • JWT • Algo
           "A Longitudinal Behavioral Framework Mapping Environmental Influences, Mass Emotional Fatigue, and Future Demand Shifts.",
         link: "https://mycrdit.netlify.app",
         imgsrc: researchPoster,
-        content_Heading: `RESEARCH & STRATEGIC BEHAVIORAL ANALYSIS
-Macro Consumer Psychology & Mass Content Consumption Dynamics`,
+        content_Heading: `Reasearch and strategic behavioral analysis.`,
         content_subheading: `A Longitudinal Behavioral Framework Mapping Environmental Influences, Mass Emotional Fatigue, and Future Demand Shifts
 (2020-2026)
 Author: Yashwardhan Singh
@@ -106,18 +105,6 @@ This study presents a structural psychological framework designed to analyze mas
 1. Content Supply & Consumption Dynamics Matrix (Layer 1)
 To establish baseline market conditions, content formats are categorized by supply density, audience following, engagement rates, emotional triggers, and retention value scale. (Note: DOC = Depends on Content).
 
-1. Funny reels comedy structure | FOLLOW %: Very High | CREATOR %: High | ENGAGE %: Very High | EMOTION TRIGGERED: Laugh | EMOTION SCALE: Very High | VALUE TYPE: Laugh | VALUE SCALE: Low | RETENTION SCALE: Low - Mid
-2. Trendy Trend reels | FOLLOW %: Mid - Low | CREATOR %: Very High | ENGAGE %: High | EMOTION TRIGGERED: Mix DOC | EMOTION SCALE: High | VALUE TYPE: Mix | VALUE SCALE: Low | RETENTION SCALE: Low - None
-3. Pov social takes | FOLLOW %: Mid - High | CREATOR %: Mid - High | ENGAGE %: High | EMOTION TRIGGERED: Mix DOC | EMOTION SCALE: High | VALUE TYPE: Insight / Knowledge | VALUE SCALE: Mid-High | RETENTION SCALE: Mid-High
-4. Advice content (love, gym etc) | FOLLOW %: High | CREATOR %: Mid - High | ENGAGE %: High | EMOTION TRIGGERED: Satisfaction, Curiosity, Realisation | EMOTION SCALE: Mid - High | VALUE TYPE: Knowledge | VALUE SCALE: Mid-High | RETENTION SCALE: Mid
-5. Text Pov self edits | FOLLOW %: Low | CREATOR %: Very High | ENGAGE %: Mid - Low | EMOTION TRIGGERED: Relax/Cool | EMOTION SCALE: Mid - High | VALUE TYPE: Entertainment | VALUE SCALE: Low | RETENTION SCALE: Low
-6. Astro / spiritual/ numero/vastu | FOLLOW %: Very High | CREATOR %: High | ENGAGE %: Very High | EMOTION TRIGGERED: Relax / Curious | EMOTION SCALE: High - Very High | VALUE TYPE: Knowledge | VALUE SCALE: Very High | RETENTION SCALE: Very High
-7. News | FOLLOW %: Mid - Low | CREATOR %: Mid | ENGAGE %: High | EMOTION TRIGGERED: Mix DOC | EMOTION SCALE: Mid - High | VALUE TYPE: Knowledge | VALUE SCALE: Mid - High | RETENTION SCALE: Low - Mid
-8. Info reels (schemes, laws, rules etc) | FOLLOW %: Very High | CREATOR %: Low - Mid | ENGAGE %: Very High | EMOTION TRIGGERED: Informed Satisfaction | EMOTION SCALE: Mid | VALUE TYPE: Information | VALUE SCALE: Mid - High | RETENTION SCALE: Low - Mid
-9. Story videos (history etc) | FOLLOW %: Mid | CREATOR %: Mid | ENGAGE %: High | EMOTION TRIGGERED: Mix DOC | EMOTION SCALE: Mid - High | VALUE TYPE: Information | VALUE SCALE: Mid - High | RETENTION SCALE: Mid
-10. Place reviews | FOLLOW %: Very High | CREATOR %: Very High | ENGAGE %: Mid - High | EMOTION TRIGGERED: Satisfaction | EMOTION SCALE: Mid | VALUE TYPE: Information | VALUE SCALE: Mid - High | RETENTION SCALE: Mid - High
-11. Fashion reels | FOLLOW %: Mid-High | CREATOR %: Very High | ENGAGE %: Mid-High | EMOTION TRIGGERED: Feel Good | EMOTION SCALE: Mid-Low | VALUE TYPE: Info/Entertain | VALUE SCALE: Mid-Low | RETENTION SCALE: Mid
-12. Podcast creators | FOLLOW %: Mid - High | CREATOR %: Mid | ENGAGE %: High - Very High | EMOTION TRIGGERED: Mix DOC | EMOTION SCALE: Mid - High | VALUE TYPE: Mix DOC | VALUE SCALE: Mid-High | RETENTION SCALE: Mid-High
 
 2. Mass Psychological Filtering & Market Saturation (Layer 2)
 Predicting the current user state of mind requires filtering the data table through systematic diagnostic questions:
@@ -223,9 +210,10 @@ STRATEGIC MARKET OPPORTUNITY:
       {
         name: "Submarine music festival",
         description: "City's first open air music festival.",
-        explanation: `Submarine Music Festival — Lead Organizer
-
-The City’s First Open-Air Music Festival
+        content_Heading: "City's first open air music festival.",
+        content_subheading: "Submarine Music Festival — Lead Organizer",
+        content_main_text: "",
+        explanation: `The City’s First Open-Air Music Festival
 
 At 17, I conceptualized, planned, and executed the city’s inaugural open-air music festival from the ground up. This project marked my entry into large-scale logistics, crowd coordination, vendor operations, and live production management.
 
@@ -234,6 +222,7 @@ End-to-End Event Operations: Managed stage design, audio engineering setups, art
 Team & Vendor Leadership: Directed cross-functional teams across staging, security, ticketing, and marketing to ensure real-time venue safety and smooth execution.
 
 Brand & Audience Engagement: Drove localized promotional campaigns, sponsorship outreach, and ticket distribution strategies that successfully launched a new event brand in the city.`,
+
         link: "https://www.facebook.com/photo.php?fbid=114562575789473&set=pb.100017071938090.-2207520000&type=3",
         imgsrc: eventPoster2,
       },
@@ -258,7 +247,7 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
           "Freelancing work and social media page posting all the designs. Designs were made using mix of Photoshop, illustrator and canva.",
         link: "https://www.instagram.com/elmont___/",
         imgsrc: graphicPoster,
-        content_Heading: `Freelance graphic designing work`,
+        content_Heading: `Freelance graphic designing work for independent businesses`,
         content_subheading: `Freelancing work and social media page posting all the designs.`,
         content_main_text: `Designs were made using mix of Photoshop, illustrator and canva."`,
       },
@@ -268,6 +257,9 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
         explanation: "",
         link: "",
         imgsrc: dummyBG,
+        content_subheading: "",
+        content_Heading: "Project under development, link will be here soon.",
+        content_main_text: "",
       },
     ],
     activeSelection: null,
