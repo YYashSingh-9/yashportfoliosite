@@ -15,7 +15,7 @@
 .innerGrid {
   display: grid;
   padding: 0.5rem 0.5rem;
-  grid-template-rows: 65% 23% 12%;
+  grid-template-rows: 65% 25% 10%;
   grid-template-columns: 100%;
   width: inherit;
 }
@@ -43,11 +43,12 @@
   border-top: 0.1rem solid var(--border-light);
   display: flex;
   align-items: center;
+  padding-top: 0.3rem;
 }
 
 .cardButton {
   letter-spacing: -0.1rem !important;
-  font-size: 1rem !important;
+  font-size: 0.9rem !important;
   color: black !important;
   height: 80% !important;
   width: 100% !important;
