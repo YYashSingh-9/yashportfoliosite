@@ -13,16 +13,16 @@ const HomePage = () => {
         justifyContent="center"
         alignContent="center"
       >
-        <Grid item>
+        <Grid item id="home">
           <HomePageGrid />
         </Grid>
-        <Grid item>
+        <Grid item id="navsection">
           <NavigationSection />
         </Grid>
-        <Grid item>
+        <Grid item id="about">
           <AboutPage />
         </Grid>
-        <Grid item>
+        <Grid item id="work">
           <MyWorkPage />
         </Grid>
       </Grid>

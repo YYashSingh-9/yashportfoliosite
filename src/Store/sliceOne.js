@@ -212,8 +212,7 @@ STRATEGIC MARKET OPPORTUNITY:
         description: "City's first open air music festival.",
         content_Heading: "City's first open air music festival.",
         content_subheading: "Submarine Music Festival — Lead Organizer",
-        content_main_text: "",
-        explanation: `The City’s First Open-Air Music Festival
+        content_main_text: `The City’s First Open-Air Music Festival
 
 At 17, I conceptualized, planned, and executed the city’s inaugural open-air music festival from the ground up. This project marked my entry into large-scale logistics, crowd coordination, vendor operations, and live production management.
 
@@ -257,9 +256,10 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
         explanation: "",
         link: "",
         imgsrc: dummyBG,
-        content_subheading: "",
+        content_subheading:
+          "Project under development, link will be here soon.",
         content_Heading: "Project under development, link will be here soon.",
-        content_main_text: "",
+        content_main_text: "Project under development, link will be here soon.",
       },
     ],
     activeSelection: null,

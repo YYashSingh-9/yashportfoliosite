@@ -3,13 +3,15 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import nav_BG from "../../assets/nav_bg.png";
+import { Button } from "@mui/material";
 
 const navItems = [
-  "Start here",
-  "Know me",
-  "see my work",
-  "what i do",
-  "let's talk",
+  { title: "Start here", linksId: "#home" },
+  { title: "Navigate", linksId: "#navsection" },
+  { title: "Know me", linksId: "#about" },
+  { title: "see my work", linksId: "#work" },
+  { title: "what i do", linksId: "" },
+  { title: "let's talk", linksId: "" },
 ];
 const NavBar = () => {
   return (
@@ -20,7 +22,7 @@ const NavBar = () => {
             return (
               <Box className={classes.navItemParent_cover}>
                 <Box className={classes.navItemChild_cover}>
-                  <p>{el}</p>
+                  <Button href={el.linksId}>{el.title}</Button>
                 </Box>
                 <Box className={classes.btn_ball}></Box>
               </Box>
