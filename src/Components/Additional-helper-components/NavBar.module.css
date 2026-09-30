@@ -61,6 +61,17 @@
   transition: 0.2s ease;
 }
 
+.navBtn {
+  color: var(--button-text) !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 400 !important;
+  width: 10rem !important;
+  letter-spacing: 0.1rem !important;
+  border-radius: 2rem !important;
+}
+.navBtn:hover {
+  background-color: transparent !important;
+}
 /* Hover and active classes .... */
 .logoutBtn button:hover {
   cursor: pointer;

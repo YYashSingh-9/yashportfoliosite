@@ -22,7 +22,7 @@ const NavBar = () => {
             return (
               <Box className={classes.navItemParent_cover}>
                 <Box className={classes.navItemChild_cover}>
-                  <Button href={el.linksId}>{el.title}</Button>
+                  <Button href={el.linksId} className={classes.navBtn}>{el.title}</Button>
                 </Box>
                 <Box className={classes.btn_ball}></Box>
               </Box>
