@@ -44,22 +44,25 @@
   height: 30rem;
 }
 .btn_base {
-  background-color: rgb(7, 7, 7);
-  font-family: "Inter";
-  color: var(--button-text);
-  padding: 0.6rem 2rem;
-  border-radius: 2rem;
-  text-transform: capitalize;
-  transition: 0.1s ease-in-out;
-  font-size: 0.9rem;
-  border: 0.1rem solid var(--text-subtitle);
-  cursor: pointer;
+  background-color: rgb(7, 7, 7) !important;
+  font-family: "Inter" !important;
+  color: var(--button-text) !important;
+  padding: 0.6rem 2rem !important;
+  border-radius: 2rem !important;
+  text-transform: capitalize !important;
+  transition: 0.1s ease-in-out !important;
+  font-size: 0.9rem !important;
+  border: 0.1rem solid var(--text-subtitle) !important;
+  cursor: pointer !important;
+
+  margin: auto !important;
+  margin-top: 2rem !important;
 }
-.leftGrid > :nth-child(4) {
+/* .leftGrid > :nth-child(4) {
   width: 19%;
   margin: auto;
   margin-top: 2rem;
-}
+} */
 
 .btn_ball {
   cursor: pointer;

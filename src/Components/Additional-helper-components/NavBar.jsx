@@ -4,6 +4,12 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import nav_BG from "../../assets/nav_bg.png";
 import { Button } from "@mui/material";
+import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import WorkIcon from "@mui/icons-material/Work";
+import FrontHandIcon from "@mui/icons-material/FrontHand";
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
 
 const navItems = [
   { title: "Start here", linksId: "#home" },
@@ -22,7 +28,9 @@ const NavBar = () => {
             return (
               <Box className={classes.navItemParent_cover}>
                 <Box className={classes.navItemChild_cover}>
-                  <Button href={el.linksId} className={classes.navBtn}>{el.title}</Button>
+                  <Button href={el.linksId} className={classes.navBtn}>
+                    {el.title}
+                  </Button>
                 </Box>
                 <Box className={classes.btn_ball}></Box>
               </Box>
