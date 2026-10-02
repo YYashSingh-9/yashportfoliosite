@@ -6,7 +6,6 @@ import nav_BG from "../../assets/nav_bg.png";
 import { Button } from "@mui/material";
 import PlayCircleFilledWhiteIcon from "@mui/icons-material/PlayCircleFilledWhite";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
-import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import WorkIcon from "@mui/icons-material/Work";
 import FrontHandIcon from "@mui/icons-material/FrontHand";
 import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
@@ -30,6 +29,7 @@ const NavBar = () => {
                 <Box className={classes.navItemChild_cover}>
                   <Button href={el.linksId} className={classes.navBtn}>
                     {el.title}
+                    <PlayCircleFilledWhiteIcon />
                   </Button>
                 </Box>
                 <Box className={classes.btn_ball}></Box>
