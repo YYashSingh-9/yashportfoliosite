@@ -9,14 +9,15 @@ import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import WorkIcon from "@mui/icons-material/Work";
 import FrontHandIcon from "@mui/icons-material/FrontHand";
 import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
 
 const navItems = [
-  { title: "Start here", linksId: "#home" },
-  { title: "Navigate", linksId: "#navsection" },
-  { title: "Know me", linksId: "#about" },
-  { title: "see my work", linksId: "#work" },
-  { title: "what i do", linksId: "" },
-  { title: "let's talk", linksId: "" },
+  { title: "Start here", linksId: "#home", iconName: "start" },
+  { title: "Navigate", linksId: "#navsection", iconName: "nav" },
+  { title: "Know me", linksId: "#about", iconName: "about" },
+  { title: "see my work", linksId: "#work", iconName: "work" },
+  { title: "what i do", linksId: "", iconName: "services" },
+  { title: "let's talk", linksId: "", iconName: "contact" },
 ];
 const NavBar = () => {
   return (
@@ -28,8 +29,17 @@ const NavBar = () => {
               <Box className={classes.navItemParent_cover}>
                 <Box className={classes.navItemChild_cover}>
                   <Button href={el.linksId} className={classes.navBtn}>
-                    {el.title}
-                    <PlayCircleFilledWhiteIcon />
+                    <span className={classes.btnText}>
+                      <p>{el.title} </p>
+                      {el.iconName === "start" && <PlayCircleFilledWhiteIcon />}
+                      {el.iconName === "nav" && <MenuOpenIcon />}
+                      {el.iconName === "about" && <FrontHandIcon />}
+                      {el.iconName === "work" && <WorkIcon />}
+                      {el.iconName === "services" && <DesignServicesIcon />}
+                      {el.iconName === "contact" && (
+                        <ConnectWithoutContactIcon />
+                      )}
+                    </span>
                   </Button>
                 </Box>
                 <Box className={classes.btn_ball}></Box>

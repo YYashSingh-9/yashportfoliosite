@@ -69,7 +69,16 @@
   letter-spacing: 0.02rem !important;
   border-radius: 2rem !important;
   text-transform: capitalize !important;
-  font-size: 1rem !important;
+  font-size: 0.9rem !important;
+}
+.btnText {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btnText > :nth-child(2) {
+  margin-left: 0.2rem;
+  transform: scale(0.8);
 }
 .navBtn:hover {
   background-color: transparent !important;
