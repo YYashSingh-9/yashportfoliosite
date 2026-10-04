@@ -15,7 +15,7 @@ const navItems = [
   { title: "Start here", linksId: "#home", iconName: "start" },
   { title: "Navigate", linksId: "#navsection", iconName: "nav" },
   { title: "Know me", linksId: "#about", iconName: "about" },
-  { title: "see my work", linksId: "#work", iconName: "work" },
+  { title: " my work", linksId: "#work", iconName: "work" },
   { title: "what i do", linksId: "", iconName: "services" },
   { title: "let's talk", linksId: "", iconName: "contact" },
 ];

@@ -7,6 +7,7 @@ import eventPoster2 from "../assets/eventPoster2.png";
 import mufasaPoster from "../assets/mufasaPoster.png";
 import graphicPoster from "../assets/graphicPoster.jpg";
 import researchPoster from "../assets/researchPoster.png";
+
 const sliceOne = createSlice({
   name: "sliceOne",
   initialState: {
