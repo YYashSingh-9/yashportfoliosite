@@ -263,6 +263,7 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
         content_main_text: "Project under development, link will be here soon.",
       },
     ],
+
     activeSelection: null,
     modalDialog_Open: false,
     viewedProject: {},
