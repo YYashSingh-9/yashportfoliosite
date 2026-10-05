@@ -300,7 +300,9 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
     ],
     activeSelection: null,
     modalDialog_Open: false,
+    aboutSection_Modal_state: false,
     viewedProject: {},
+    viewdAboutSection: {},
   },
   reducers: {
     toggleSelection(state, action) {
@@ -310,6 +312,10 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
     toggle_ModalDialog(state, action) {
       state.modalDialog_Open = !state.modalDialog_Open;
       state.viewedProject = action.payload;
+    },
+    toggle_AboutPageModal(state, action) {
+      state.aboutSection_Modal_state = !state.aboutSection_Modal_state;
+      state.viewdAboutSection = action.payload;
     },
   },
 });
