@@ -293,9 +293,15 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
       },
       {
         title: "I contribute more because",
-        mainText_one: "",
-        mainText_two: "",
-        onelineText: "",
+        mainText_one: `Beyond writing code, I leverage qualitative research, structured project management, and deep logical thinking 
+        to solve core product challenges. I lead initiatives with clear, persuasive communication—articulating technical vision and 
+        keeping cross-functional teams aligned. Instead of focusing on input hours, I focus on unyielding output: taking total accountability 
+        to overcome obstacles and deliver results. Additionally, I bring a sharp growth marketing perspective to every build, ensuring the final 
+        product is not only technically sound, but strategically positioned for user acquisition and market impact.`,
+        mainText_two:
+          " I bring product strategy, cross-functional management, growth marketing, and clear communication alongside core software engineering.",
+        onelineText:
+          " I contribute more because I bring product strategy, cross-functional management, growth marketing, and clear communication alongside core software engineering.",
       },
       {
         title: "I have to say this..",
