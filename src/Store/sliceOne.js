@@ -305,9 +305,12 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
       },
       {
         title: "I have to say this..",
-        mainText_one: "",
-        mainText_two: "",
-        onelineText: "",
+        mainText_one:
+          " At the end of the day, outcomes outweigh theory. It doesn't matter how many degrees or certifications sit on paper if the end product fails to deliver real value. I hold myself to a standard where execution, deep reliability, and complete delivery are non-negotiable.",
+        mainText_two:
+          " I measure success by delivered outcomes, not effort metrics or credentials.",
+        onelineText:
+          " Credentials show where you've been; delivery proves who you are. There is a fine line between making something run and making something work—I focus on making it work, period.",
       },
     ],
     activeSelection: null,
