@@ -267,23 +267,29 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
       {
         title: "Why i am the right choice",
         mainText_one: `Why Work With Me
-Psychology-Driven Engineering: I design web applications rooted in human psychology, reducing friction to make user interfaces naturally intuitive and easy to navigate.
-
-Unconventional Problem Solving: I tackle complex technical challenges from unique angles, combining strong logical thinking with deep attention to detail.
-
-Execution & Leadership: Backed by clear communication and disciplined management, I take complete ownership to deliver high-quality outcomes on time.`,
+Psychology-Driven Engineering: I design web applications rooted in human psychology, reducing friction to 
+make user interfaces naturally intuitive and easy to navigate.
+Unconventional Problem Solving: I tackle complex technical challenges from unique angles, combining strong 
+logical thinking with deep attention to detail.
+Execution & Leadership: Backed by clear communication and disciplined management, I take complete ownership to 
+deliver high-quality outcomes on time.`,
         mainText_two: `Personal Philosophy
 Compound Value & Long-Term Vision: I prioritize long-term growth, sustainable relationships, and enduring returns over short-term shortcuts or quick wins.
-
 Uncompromising Commitment: I operate on deep trust and high work ethics—going beyond limits to see every commitment through to completion.`,
         onelineText:
           "I solve real problems, pay attention to the minute details, and simply get things done.",
       },
       {
         title: "I stand out from the crowd because",
-        mainText_one: "",
-        mainText_two: "",
-        onelineText: "",
+        mainText_one: `I tackle complex challenges by combining rigorous logical
+          thinking with human psychology—building web apps that are structurally
+           solid and naturally intuitive to navigate. Also I thrive in distraction-free, 
+           high-focus states, obsessing over the micro-details, edge cases, and subtle 
+           refinements that elevate standard code into exceptional software.`,
+        mainText_two: `I don't trade quality for shortcuts. Supported by high work ethics, 
+        clear communication, and a long-term mindset, I build products and professional relationships designed for compound growth.`,
+        onelineText:
+          "I stand out from the crowd because I bring deep work, sharp logic, and human psychology together to solve real problems.",
       },
       {
         title: "I contribute more because",
