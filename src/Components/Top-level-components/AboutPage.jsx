@@ -14,11 +14,7 @@ const AboutPage = () => {
         <Box className={classes.parentLayer}>
           <Box className={classes.firstLayer}>
             <Box>
-              <p>
-                Why i should be your choice{" "}
-                {/* <span className={classes.highlighted_text}> hire me</span>{" "}
-                ?{" "} */}
-              </p>
+              <p>Why i should be your choice </p>
               <button onClick={clickevent}>
                 Read this <ArrowOutwardIcon />
               </button>
