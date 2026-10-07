@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const AboutPage = () => {
   const data = useSelector((state) => state.sliceOne);
+  const dispatch = useDispatch();
   const clickevent = () => {
     console.log("this click works.");
   };
