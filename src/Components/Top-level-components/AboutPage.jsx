@@ -3,8 +3,10 @@ import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
 import boystanding from "../../assets/aboutImg.png";
 import { Box } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import { useDispatch, useSelector } from "react-redux";
 
 const AboutPage = () => {
+  const data = useSelector((state) => state.sliceOne);
   const clickevent = () => {
     console.log("this click works.");
   };
