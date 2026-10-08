@@ -4,11 +4,15 @@ import boystanding from "../../assets/aboutImg.png";
 import { Box } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { useDispatch, useSelector } from "react-redux";
+import ModalDialog from "../DRYComponents/ModalDialog";
 
 const AboutPage = () => {
   const aboutPage_Data = useSelector((state) => state.sliceOne.aboutPageInfo);
   const viewdAboutSection = useSelector(
     (state) => state.sliceOne.viewdAboutSection,
+  );
+  const modalState = useSelector(
+    (state) => state.sliceOne.aboutSection_Modal_state,
   );
   const dispatch = useDispatch();
   const clickevent = () => {
@@ -58,6 +62,11 @@ const AboutPage = () => {
               </button>
             </Box>
           </Box>
+          <ModalDialog
+            open={modalState}
+            onClose={clickevent}
+            dialogInfo={viewdAboutSection}
+          />
         </Box>
       </BasicCoverDiv>
     </>
