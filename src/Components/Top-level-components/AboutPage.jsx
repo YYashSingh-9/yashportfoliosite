@@ -6,7 +6,10 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { useDispatch, useSelector } from "react-redux";
 
 const AboutPage = () => {
-  const data = useSelector((state) => state.sliceOne);
+  const aboutPage_Data = useSelector((state) => state.sliceOne.aboutPageInfo);
+  const viewdAboutSection = useSelector(
+    (state) => state.sliceOne.viewdAboutSection,
+  );
   const dispatch = useDispatch();
   const clickevent = () => {
     console.log("this click works.");
