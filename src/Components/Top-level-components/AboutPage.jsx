@@ -15,8 +15,8 @@ const AboutPage = () => {
     (state) => state.sliceOne.aboutSection_Modal_state,
   );
   const dispatch = useDispatch();
-  const clickevent = () => {
-    console.log("this click works.");
+  const clickevent = (props) => {
+    console.log(props);
   };
   return (
     <>
