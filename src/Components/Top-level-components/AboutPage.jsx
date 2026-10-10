@@ -30,11 +30,7 @@ const AboutPage = () => {
               </button>
             </Box>
             <Box>
-              <p>
-                Why i{" "}
-                <span className={classes.highlighted_text}> stand out</span>{" "}
-                from the crowd.
-              </p>{" "}
+              <p>Why i stand out from the crowd.</p>{" "}
               <button onClick={clickevent}>
                 Click here. <ArrowOutwardIcon />
               </button>

@@ -265,7 +265,9 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
     ],
     aboutPageInfo: [
       {
+        cardTitle: "Why i should be your choice",
         title: "Why i am the right choice",
+        buttonText: "Read this",
         mainText_one: `Why Work With Me
 Psychology-Driven Engineering: I design web applications rooted in human psychology, reducing friction to 
 make user interfaces naturally intuitive and easy to navigate.
@@ -280,6 +282,8 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
           "I solve real problems, pay attention to the minute details, and simply get things done.",
       },
       {
+        cardTitle: "Why i stand out from the crowd.",
+        buttonText: "Click here.",
         title: "I stand out from the crowd because",
         mainText_one: `I tackle complex challenges by combining rigorous logical
           thinking with human psychology—building web apps that are structurally
