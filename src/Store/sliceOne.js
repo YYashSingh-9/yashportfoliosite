@@ -296,6 +296,8 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
           "I stand out from the crowd because I bring deep work, sharp logic, and human psychology together to solve real problems.",
       },
       {
+        cardTitle: "How i will contribute more.",
+        buttonText: " It would be great, if you read this.",
         title: "I contribute more because",
         mainText_one: `Beyond writing code, I leverage qualitative research, structured project management, and deep logical thinking 
         to solve core product challenges. I lead initiatives with clear, persuasive communication—articulating technical vision and 
@@ -308,6 +310,8 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
           " I contribute more because I bring product strategy, cross-functional management, growth marketing, and clear communication alongside core software engineering.",
       },
       {
+        cardTitle: "My direct & honest opinion.",
+        buttonText: " Very direct but explains my true self, do read.",
         title: "I have to say this..",
         mainText_one:
           " At the end of the day, outcomes outweigh theory. It doesn't matter how many degrees or certifications sit on paper if the end product fails to deliver real value. I hold myself to a standard where execution, deep reliability, and complete delivery are non-negotiable.",
