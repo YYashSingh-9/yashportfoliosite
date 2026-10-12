@@ -26,19 +26,6 @@ const AboutPage = () => {
           <Box className={classes.firstLayer}>
             <AboutSectionButton pageInfo={aboutPage_Data[0]} />
             <AboutSectionButton pageInfo={aboutPage_Data[1]} />
-
-            <Box>
-              <p>Why i should be your choice </p>
-              <button onClick={clickevent}>
-                Read this <ArrowOutwardIcon />
-              </button>
-            </Box>
-            <Box>
-              <p>Why i stand out from the crowd.</p>{" "}
-              <button onClick={clickevent}>
-                Click here. <ArrowOutwardIcon />
-              </button>
-            </Box>
           </Box>
           <Box className={classes.secondLayer}>
             <Box></Box>
@@ -47,20 +34,8 @@ const AboutPage = () => {
             </Box>
           </Box>
           <Box className={classes.thirdLayer}>
-            <Box>
-              <p>How i will contribute more.</p>
-              <button onClick={clickevent}>
-                It would be great, if you read this.
-                <ArrowOutwardIcon />
-              </button>
-            </Box>
-            <Box>
-              <p>My direct & honest opinion.</p>
-              <button onClick={clickevent}>
-                Very direct but explains my true self, do read.
-                <ArrowOutwardIcon />
-              </button>
-            </Box>
+            <AboutSectionButton pageInfo={aboutPage_Data[2]} />
+            <AboutSectionButton pageInfo={aboutPage_Data[3]} />
           </Box>
           <ModalDialog
             open={modalState}
