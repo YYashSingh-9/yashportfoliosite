@@ -1,10 +1,11 @@
 import classes from "./AboutPage.module.css";
+import ModalDialog from "../DRYComponents/ModalDialog";
 import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
-import boystanding from "../../assets/aboutImg.png";
-import { Box } from "@mui/material";
+import AboutSectionButton from "../DRYComponents/AboutSectionButton";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { useDispatch, useSelector } from "react-redux";
-import ModalDialog from "../DRYComponents/ModalDialog";
+import boystanding from "../../assets/aboutImg.png";
+import { Box } from "@mui/material";
 
 const AboutPage = () => {
   const aboutPage_Data = useSelector((state) => state.sliceOne.aboutPageInfo);
@@ -23,6 +24,9 @@ const AboutPage = () => {
       <BasicCoverDiv direction={"column"}>
         <Box className={classes.parentLayer}>
           <Box className={classes.firstLayer}>
+            <AboutSectionButton pageInfo={aboutPage_Data[0]} />
+            <AboutSectionButton pageInfo={aboutPage_Data[1]} />
+
             <Box>
               <p>Why i should be your choice </p>
               <button onClick={clickevent}>
