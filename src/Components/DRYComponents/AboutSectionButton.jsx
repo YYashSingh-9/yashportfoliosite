@@ -3,10 +3,10 @@ import { Box } from "@mui/material";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 const AboutSectionButton = (props) => {
-  const { pageInfo } = props;
+  const { pageInfo, clickFn } = props;
 
   const clickevent = () => {
-    console.log("jjjjj");
+    clickFn(pageInfo);
   };
   return (
     <>
