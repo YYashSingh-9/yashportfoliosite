@@ -2,7 +2,6 @@ import classes from "./AboutPage.module.css";
 import ModalDialog from "../DRYComponents/ModalDialog";
 import BasicCoverDiv from "../DRYComponents/BasicCoverDiv";
 import AboutSectionButton from "../DRYComponents/AboutSectionButton";
-import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { useDispatch, useSelector } from "react-redux";
 import boystanding from "../../assets/aboutImg.png";
 import { Box } from "@mui/material";
