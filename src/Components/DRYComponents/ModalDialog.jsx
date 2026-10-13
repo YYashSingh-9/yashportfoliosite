@@ -13,6 +13,7 @@ import classes from "./ModalDialog.module.css";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
+  //New aspect
   return (
     <>
       <Dialog
