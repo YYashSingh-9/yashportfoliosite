@@ -15,6 +15,7 @@ import ViewInArIcon from "@mui/icons-material/ViewInAr";
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
   //New aspect of this mode
+  const replaceObject = {};
   return (
     <>
       <Dialog
