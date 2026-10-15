@@ -282,40 +282,40 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
           "I solve real problems, pay attention to the minute details, and simply get things done.",
       },
       {
-        cardTitle: "Why i stand out from the crowd.",
+        name: "Why i stand out from the crowd.",
         buttonText: "Click here.",
-        title: "I stand out from the crowd because",
-        mainText_one: `I tackle complex challenges by combining rigorous logical
+        content_Heading: "I stand out from the crowd because",
+        content_subheading: `I tackle complex challenges by combining rigorous logical
           thinking with human psychology—building web apps that are structurally
            solid and naturally intuitive to navigate. Also I thrive in distraction-free, 
            high-focus states, obsessing over the micro-details, edge cases, and subtle 
            refinements that elevate standard code into exceptional software.`,
-        mainText_two: `I don't trade quality for shortcuts. Supported by high work ethics, 
+        content_main_text: `I don't trade quality for shortcuts. Supported by high work ethics, 
         clear communication, and a long-term mindset, I build products and professional relationships designed for compound growth.`,
         onelineText:
           "I stand out from the crowd because I bring deep work, sharp logic, and human psychology together to solve real problems.",
       },
       {
-        cardTitle: "How i will contribute more.",
+        name: "How i will contribute more.",
         buttonText: " It would be great, if you read this.",
-        title: "I contribute more because",
-        mainText_one: `Beyond writing code, I leverage qualitative research, structured project management, and deep logical thinking 
+        content_Heading: "I contribute more because",
+        content_subheading: `Beyond writing code, I leverage qualitative research, structured project management, and deep logical thinking 
         to solve core product challenges. I lead initiatives with clear, persuasive communication—articulating technical vision and 
         keeping cross-functional teams aligned. Instead of focusing on input hours, I focus on unyielding output: taking total accountability 
         to overcome obstacles and deliver results. Additionally, I bring a sharp growth marketing perspective to every build, ensuring the final 
         product is not only technically sound, but strategically positioned for user acquisition and market impact.`,
-        mainText_two:
+        content_main_text:
           " I bring product strategy, cross-functional management, growth marketing, and clear communication alongside core software engineering.",
         onelineText:
           " I contribute more because I bring product strategy, cross-functional management, growth marketing, and clear communication alongside core software engineering.",
       },
       {
-        cardTitle: "My direct & honest opinion.",
+        name: "My direct & honest opinion.",
         buttonText: " Very direct but explains my true self, do read.",
-        title: "I have to say this..",
-        mainText_one:
+        content_Heading: "I have to say this..",
+        content_subheading:
           " At the end of the day, outcomes outweigh theory. It doesn't matter how many degrees or certifications sit on paper if the end product fails to deliver real value. I hold myself to a standard where execution, deep reliability, and complete delivery are non-negotiable.",
-        mainText_two:
+        content_main_text:
           " I measure success by delivered outcomes, not effort metrics or credentials.",
         onelineText:
           " Credentials show where you've been; delivery proves who you are. There is a fine line between making something run and making something work—I focus on making it work, period.",

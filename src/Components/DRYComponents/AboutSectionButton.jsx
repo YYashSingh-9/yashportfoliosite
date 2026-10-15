@@ -7,6 +7,7 @@ const AboutSectionButton = (props) => {
 
   const clickevent = () => {
     clickFn(pageInfo);
+    console.log(pageInfo);
   };
   return (
     <>
