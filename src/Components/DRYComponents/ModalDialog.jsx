@@ -15,7 +15,7 @@ import ViewInArIcon from "@mui/icons-material/ViewInAr";
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
   //New aspect of this mode
-  const replaceObject = {};
+  let oneLiner = dialogInfo.oneLiner ? dialogInfo.oneLiner : "";
   return (
     <>
       <Dialog
@@ -55,17 +55,23 @@ const ModalDialog = (props) => {
           <Typography paragraph className={classes.cardParagraph}>
             {dialogInfo.cardMainText}{" "}
           </Typography>
+          <Typography paragraph className={classes.cardParagraph}>
+            {dialogInfo.cardMainText}{" "}
+          </Typography>
         </DialogContent>
         <DialogActions className={classes.cardActionSection}>
-          <Button
-            href={dialogInfo.link}
-            onClick={onClose}
-            color="inherit"
-            className={classes.openLinkBtn}
-          >
-            {" "}
-            Open project
-          </Button>
+          {!oneLiner.length > 1 && (
+            <Button
+              href={dialogInfo.link}
+              onClick={onClose}
+              color="inherit"
+              className={classes.openLinkBtn}
+            >
+              {" "}
+              Open project
+            </Button>
+          )}
+
           <Button
             onClick={onClose}
             color="inherit"
