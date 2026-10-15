@@ -11,7 +11,7 @@ const AboutSectionButton = (props) => {
   return (
     <>
       <Box>
-        <p>{pageInfo.cardTitle}</p>
+        <p>{pageInfo.name}</p>
         <button onClick={clickevent}>
           {pageInfo.buttonText}
           <ArrowOutwardIcon />

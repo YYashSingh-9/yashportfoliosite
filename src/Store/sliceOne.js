@@ -266,8 +266,8 @@ Brand Strategy & Customer Retention: Developed brand identity, localized promoti
     aboutPageInfo: [
       {
         name: "Why i should be your choice",
-        title: "Why i am the right choice",
-        content_Heading: "Read this",
+        content_Heading: "Why i am the right choice",
+        buttonText: "Read this",
         content_subheading: `Why Work With Me
 Psychology-Driven Engineering: I design web applications rooted in human psychology, reducing friction to 
 make user interfaces naturally intuitive and easy to navigate.
