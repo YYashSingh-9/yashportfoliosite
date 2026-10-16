@@ -16,8 +16,8 @@ const AboutPage = () => {
     (state) => state.sliceOne.aboutSection_Modal_state,
   );
   const dispatch = useDispatch();
-  const clickevent = (props) => {
-    dispatch(sliceActions.toggle_AboutPageModal(props));
+  const clickevent = (obj) => {
+    dispatch(sliceActions.toggle_AboutPageModal(obj));
   };
   return (
     <>
