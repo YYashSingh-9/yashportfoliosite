@@ -339,6 +339,7 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
     toggle_AboutPageModal(state, action) {
       state.aboutSection_Modal_state = !state.aboutSection_Modal_state;
       state.viewdAboutSection = action.payload;
+      console.log(action.payload);
     },
   },
 });

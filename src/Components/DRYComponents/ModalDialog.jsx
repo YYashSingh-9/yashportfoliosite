@@ -78,7 +78,7 @@ const ModalDialog = (props) => {
             className={classes.closeBtn}
           >
             {" "}
-            Close
+            <CloseIcon className={classes.closeIcn} />
           </Button>
         </DialogActions>
       </Dialog>
