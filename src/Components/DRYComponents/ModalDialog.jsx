@@ -58,7 +58,7 @@ const ModalDialog = (props) => {
               {oneLiner}{" "}
             </Typography>
           )}
-
+          <br />
           <Typography paragraph className={classes.cardParagraph}>
             {dialogInfo.cardMainText}{" "}
           </Typography>
