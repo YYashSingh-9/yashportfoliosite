@@ -11,6 +11,7 @@ import {
 import CloseIcon from "@mui/icons-material/Close";
 import classes from "./ModalDialog.module.css";
 import ViewInArIcon from "@mui/icons-material/ViewInAr";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 const ModalDialog = (props) => {
   const { open, onClose, dialogInfo } = props;
@@ -63,7 +64,7 @@ const ModalDialog = (props) => {
           </Typography>
         </DialogContent>
         <DialogActions className={classes.cardActionSection}>
-          {!oneLiner.length > 1 && (
+          {!oneLiner && (
             <Button
               href={dialogInfo.link}
               onClick={onClose}
@@ -71,7 +72,7 @@ const ModalDialog = (props) => {
               className={classes.openLinkBtn}
             >
               {" "}
-              Open project
+              <LaunchIcon className={classes.openIcn} />
             </Button>
           )}
 

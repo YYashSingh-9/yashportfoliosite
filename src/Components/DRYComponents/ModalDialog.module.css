@@ -57,16 +57,17 @@
   margin: auto !important;
 }
 .openLinkBtn {
-  background-color: black !important;
   font-family: "Inter", "sans-serif" !important;
   font-weight: 700 !important;
   border-radius: 2rem !important;
   padding: 0.4rem 0rem !important;
   width: 10rem !important;
   background-color: transparent !important;
-  border: 0.1rem solid black !important;
+  border: 0.1rem solid rgb(71, 155, 69) !important;
 }
-
+.openIcn {
+  color: rgb(71, 155, 69);
+}
 .closeBtn {
   display: flex;
   align-items: center;
