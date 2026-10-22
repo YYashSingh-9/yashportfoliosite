@@ -7,6 +7,10 @@ import eventPoster2 from "../assets/eventPoster2.png";
 import mufasaPoster from "../assets/mufasaPoster.png";
 import graphicPoster from "../assets/graphicPoster.jpg";
 import researchPoster from "../assets/researchPoster.png";
+import htmlLogoWhite from "../assets/html5_white.png";
+import javascriptLogo_white from "../assets/javascript_white.png";
+import reactLogo_white from "../assets/react_white.png";
+import cssLogo_white from "../assets/css_white.png";
 
 const sliceOne = createSlice({
   name: "sliceOne",
