@@ -325,6 +325,12 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
           " Credentials show where you've been; delivery proves who you are. There is a fine line between making something run and making something work—I focus on making it work, period.",
       },
     ],
+    mySkills_Logos: [
+      { htmlLogo: htmlLogoWhite },
+      { cssLogo: cssLogo_white },
+      { reactLogo: reactLogo_white },
+      { javascriptLogo: javascriptLogo_white },
+    ],
     activeSelection: null,
     modalDialog_Open: false,
     aboutSection_Modal_state: false,
