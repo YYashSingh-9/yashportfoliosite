@@ -331,7 +331,7 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
       { reactLogo: reactLogo_white },
       { javascriptLogo: javascriptLogo_white },
     ],
-    mySkills_object: [],
+    mySkills_object: [{ title: "" }],
     activeSelection: null,
     modalDialog_Open: false,
     aboutSection_Modal_state: false,
