@@ -11,7 +11,15 @@ import htmlLogoWhite from "../assets/html5_white.png";
 import javascriptLogo_white from "../assets/javascript_white.png";
 import reactLogo_white from "../assets/react_white.png";
 import cssLogo_white from "../assets/css_white.png";
-
+import postmanLogo_white from "../assets/postman_logo.png";
+import nodejsLogo_white from "../assets/nodejs_logo.png";
+import mongooseLogo_white from "../assets/mongoose_logo.png";
+import mongodbLogo_white from "../assets/mongodb_logo.png";
+import reactRouterLogo_white from "../assets/reactRouter_logo.png";
+import reduxLogo_white from "../assets/redux_logo.png";
+import jwtLogo_white from "../assets/jwt_logo.png";
+import expressLogo_white from "../assets/express_logo.png";
+import muiLogo_white from "../assets/mui_logo.png";
 const sliceOne = createSlice({
   name: "sliceOne",
   initialState: {
@@ -326,10 +334,12 @@ Uncompromising Commitment: I operate on deep trust and high work ethics—going 
       },
     ],
     mySkills_Logos: [
-      { htmlLogo: htmlLogoWhite },
-      { cssLogo: cssLogo_white },
-      { reactLogo: reactLogo_white },
-      { javascriptLogo: javascriptLogo_white },
+      {
+        htmlLogo: htmlLogoWhite,
+        cssLogo: cssLogo_white,
+        reactLogo: reactLogo_white,
+        javascriptLogo: javascriptLogo_white,
+      },
     ],
     mySkills_object: [{ title: "" }],
     activeSelection: null,
